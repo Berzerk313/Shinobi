@@ -226,6 +226,7 @@ html {
     padding: 30px 15px 0 0;
     display: flex;
     flex-direction: column;
+    z-index: 12;
   }
   .burger-wrapper .burger-menu__close {
     position: relative;
