@@ -7,9 +7,12 @@ a {
 
 html {
     scroll-behavior: smooth;
+    // overflow-x:hidden;
 }
 
-// body {}
+body {
+    overflow-x:hidden;
+}
 
 .lock {
     overflow: hidden;
@@ -110,9 +113,6 @@ html {
         display: none;
     }
 
-    // .burger-wrapper{
-    //     display: block;
-    // }
     .burger-wrapper {
         position: fixed;
         display: flex;
@@ -1007,6 +1007,7 @@ html {
     .scout-content {
         &__info {
             height: 390px;
+
             &-title {
                 &-second {
                     width: 305px;
@@ -1123,10 +1124,12 @@ html {
     .shinobi-content {
         &__left {
             padding-left: 100px;
+
             &-shinobi-img {
                 width: 654px;
                 height: 690px;
             }
+
             &-circle-img {
                 width: 400px;
                 height: 400px;
@@ -1141,10 +1144,12 @@ html {
     .shinobi-content {
         &__left {
             padding-left: 0px;
+
             &-shinobi-img {
                 width: 654px;
                 height: 690px;
             }
+
             &-circle-img {
                 width: 350px;
                 height: 350px;
@@ -1157,35 +1162,42 @@ html {
 
 @media (max-width: 1260px) {
     .shinobi-content {
-        gap:0;
+        gap: 0;
+
         &__left {
             padding-left: 100px;
+
             &-shinobi-img {
                 width: 554px;
                 height: 590px;
             }
+
             &-circle-img {
                 width: 300px;
                 height: 300px;
                 top: -60px;
                 right: -60px;
             }
+
             .arrow-bottom {
                 right: 6px;
             }
         }
+
         &__right {
             &-title {
                 font-size: 70px;
             }
+
             &-info {
                 &-textblock {
                     &-text {
-                        .shinobi-content_color {
-                        }
+                        .shinobi-content_color {}
+
                         font-size: 16px;
                         width: 380px;
                     }
+
                     &-img {
                         width: 38px;
                     }
@@ -1197,29 +1209,35 @@ html {
 
 @media (max-width: 1130px) {
     .shinobi-content {
-        gap:0px;
+        gap: 0px;
+
         &__left {
             padding-left: 140px;
+
             &-shinobi-img {
                 width: 454px;
                 height: 410px;
             }
+
             &-circle-img {
                 width: 300px;
                 height: 300px;
                 top: -100px;
                 right: -100px;
             }
+
             .arrow-bottom {
                 right: 6px;
                 bottom: -70px;
             }
         }
+
         &__right {
             padding-top: 0;
-            &-info{
+
+            &-info {
                 &-textblock {
-                    gap:15px;
+                    gap: 15px;
                 }
             }
         }
@@ -1228,7 +1246,8 @@ html {
 
 @media (max-width: 1040px) {
     .shinobi-content {
-        gap:0px;
+        gap: 0px;
+
         &__left {
             padding-left: 0px;
         }
@@ -1238,39 +1257,47 @@ html {
 @media (max-width: 900px) {
     .shinobi-content {
         flex-direction: column;
-        gap:0px;
-        
+        gap: 0px;
+
         &__left {
             padding-left: 200px;
+
             &-shinobi-img {
                 width: 454px;
                 height: 410px;
             }
+
             &-circle-img {
                 width: 250px;
                 height: 250px;
                 top: -80px;
                 right: 200px;
             }
+
             .arrow-bottom {
                 display: none;
             }
         }
+
         &__right {
             padding-top: 45px;
             padding-left: 20px;
             margin-bottom: 166px;
-            &-title{
+
+            &-title {
                 padding-left: 240px;
             }
-            &-info{
+
+            &-info {
                 &-textblock {
-                    gap:12px;
-                    &-text{
+                    gap: 12px;
+
+                    &-text {
                         text-align: left;
                         order: 2;
                     }
-                    &-img{
+
+                    &-img {
                         order: 1;
                         transform: rotate(180deg);
                     }
@@ -1294,16 +1321,18 @@ html {
 }
 
 @media (max-width: 770px) {
- .shinobi-content {
+    .shinobi-content {
         &__left {
             padding-left: 100px;
+
             &-circle-img {
                 top: -40px;
                 right: 120px;
             }
         }
+
         &__right {
-            &-title{
+            &-title {
                 padding-left: 100px;
             }
         }
@@ -1312,46 +1341,54 @@ html {
 
 @media (max-width: 610px) {
     .shinobi-content {
-           &__left {
+        &__left {
             padding-left: 0;
-               &-circle-img {
-                   top: -40px;
-                   right: 60px;
-               }
-           }
-        
-       }
-   }
+
+            &-circle-img {
+                top: -40px;
+                right: 60px;
+            }
+        }
+
+    }
+}
 
 @media (max-width: 500px) {
     .shinobi-content {
         &__left {
             padding-left: 20px;
+
             &-shinobi-img {
                 width: 339px;
                 height: 343px;
             }
+
             &-circle-img {
                 width: 200px;
                 height: 200px;
                 top: -40px;
                 right: 40px;
             }
+
             .arrow-bottom {
                 display: none;
             }
         }
+
         &__right {
             padding-top: 45px;
             padding-left: 0px;
-            &-title{
+
+            &-title {
                 padding-left: 100px;
                 font-size: 35px;
             }
-            &-info{
+
+            &-info {
                 &-textblock {
-                    gap:12px;
-                    &-text{
+                    gap: 12px;
+
+                    &-text {
                         text-align: left;
                         order: 2;
                         font-size: 14px;
@@ -1364,37 +1401,46 @@ html {
 }
 
 @media (max-width: 420px) {
-    .shinobi-content{
+    .shinobi-content {
         padding-top: 3px;
+
         &__left {
             padding-left: 29px;
+
             &-shinobi-img {
                 width: 299px;
                 height: 343px;
             }
+
             &-circle-img {
                 width: 203px;
                 height: 203px;
                 top: -26px;
                 right: 26px;
             }
+
             .arrow-bottom {
                 display: none;
             }
         }
+
         &__right {
             padding-top: 45px;
             padding-left: 28px;
-            gap:20px;
-            &-title{
+            gap: 20px;
+
+            &-title {
                 padding-left: 32px;
                 font-size: 35px;
             }
-            &-info{
-                gap:25px;
+
+            &-info {
+                gap: 25px;
+
                 &-textblock {
-                    gap:12px;
-                    &-text{
+                    gap: 12px;
+
+                    &-text {
                         text-align: left;
                         order: 2;
                         font-size: 14px;
@@ -1407,43 +1453,53 @@ html {
 }
 
 @media (max-width: 419px) {
-    .shinobi-content{
+    .shinobi-content {
         padding-top: 3px;
+
         &__left {
             padding-left: 29px;
+
             &-shinobi-img {
                 width: 259px;
                 height: 293px;
             }
+
             &-circle-img {
                 width: 203px;
                 height: 203px;
                 top: -50px;
                 right: 0px;
             }
+
             .arrow-bottom {
                 display: none;
             }
         }
+
         &__right {
             padding-top: 45px;
             padding-left: 0px;
-            gap:20px;
-            &-title{
+            gap: 20px;
+
+            &-title {
                 padding-left: 32px;
                 font-size: 35px;
             }
-            &-info{
-                gap:25px;
+
+            &-info {
+                gap: 25px;
+
                 &-textblock {
-                    gap:6px;
-                    &-text{
+                    gap: 6px;
+
+                    &-text {
                         text-align: left;
                         order: 2;
                         font-size: 12px;
                         width: 270px;
                     }
-                    &-img{
+
+                    &-img {
                         width: 30px;
                     }
                 }
@@ -1453,14 +1509,17 @@ html {
 }
 
 @media (max-width: 340px) {
-    .shinobi-content{
+    .shinobi-content {
         padding-top: 3px;
+
         &__left {
             padding-left: 29px;
+
             &-shinobi-img {
                 width: 259px;
                 height: 293px;
             }
+
             &-circle-img {
                 width: 160px;
                 height: 160px;
@@ -1471,4 +1530,477 @@ html {
     }
 }
 
+////////////////////////////
+////////////////////////////
+////////////////////////////
+
+.background-clip-path-wrapper {
+    position: relative;
+    height: auto;
+}
+
+.background-black-clip-path {
+    background-color: rgb(12, 11, 14);
+    width: 100%;
+    height: auto;
+    // clip-path: polygon(0 0, 100% 0, 100% 57%, 0 67%);
+    clip-path: polygon(0 0, 100% 0, 100% 87%, 0 100%);
+    // z-index: -3;
+    height: 826px;
+}
+
+.how-content {
+    padding-top: 128px;
+    height: auto;
+
+    &__title {
+        // padding-left: 30px;
+        text-align: center;
+        color: #FFF;
+        font-family: 'Orbitron', sans-serif;
+        font-size: 75px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: uppercase;
+
+        &-block {
+            width: 464px;
+            max-height: 98px;
+            background: #EAFC52;
+            color: #000;
+        }
+    }
+
+    &__line {
+        margin-top: 133px;
+        width: 100%;
+        height: 1px;
+        background-color: rgba(255, 255, 255, 0.63);
+    }
+
+    &__arrow-bottom {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 95px 0 0 16px;
+        height: 37px;
+
+        .arrow-bottom {
+            align-items: center;
+        }
+    }
+
+    &__tabs {
+        &-nav {
+            padding: 12px 0 0 88px;
+            display: flex;
+            gap: 200px;
+            align-items: center;
+
+            &-btn {
+                color: rgba(255, 255, 255, 0.31);
+                font-family: 'Orbitron', sans-serif;
+                font-size: 75px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                text-transform: uppercase;
+                border: none;
+                background: none;
+                position: relative;
+                transition: none 0.5s ease;
+            }
+
+            .active::before {
+                content: '';
+                position: absolute;
+                top: -30px;
+                left: 10px;
+                width: 32px;
+                height: 32px;
+                background: #FFF;
+                transition: all 0.5s ease;
+            }
+
+            .active {
+                color: #EBFC56;
+                transition: all 0.5s ease;
+            }
+        }
+
+        &-content {
+            padding: 0px 0 0 0px;
+            display: flex;
+            gap: 38px;
+
+            &-item {
+                opacity: 0;
+                pointer-events: none;
+                text-align: center;
+
+                p {
+                    padding-top: 12px;
+                    text-align: center;
+                    color: #939393;
+                    font-family: 'Raleway';
+                    font-size: 22px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                }
+
+                h3 {
+                    color: #939393;
+                    font-family: 'Raleway';
+                    font-size: 25px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                }
+
+                span {
+                    color: #B4B4B4;
+                }
+            }
+
+            .active {
+                display: block;
+                opacity: 1;
+                pointer-events: auto;
+            }
+
+        }
+
+    }
+
+}
+
+// .shinobi-swiper {
+//     position: absolute;
+//     top: -110px;
+//     left: 0;
+//     width: 100%;
+//     transform: rotate(-3.867deg);
+//     z-index: 5;
+
+//     // overflow-x:hidden;
+//     .shinobi-wrapper {
+//         width: 100%;
+
+//         // overflow-x:hidden;
+//         .shinobi-slide {
+
+//             // max-width: 470px;
+//             // overflow-x:hidden;
+//             h3 {
+//                 font-family: 'Orbitron', sans-serif;
+//                 font-size: 100px;
+//                 font-style: normal;
+//                 font-weight: 500;
+//                 line-height: normal;
+//                 text-transform: uppercase;
+//                 color: #88888885;
+//                 // max-width: 470px;
+//                 // overflow-x:hidden;
+//             }
+//         }
+//     }
+// }
+
+.shinobi-outer {
+    overflow: hidden;
+    transform: rotate(-3.867deg);
+    position: absolute;
+    top: 700px;
+    left: 0;
+    z-index: 5;
+    width: 100%;
+    pointer-events: none;
+}
+
+.shinobi-outer div {
+    display: inline-block;
+}
+
+.shinobi-loop {
+    white-space: nowrap;
+    animation: loop-anim 15s linear infinite;
+}
+
+.shinobi-loop__content {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+    color: #88888885;
     
+}
+
+@keyframes loop-anim {
+    0% {
+        margin-left: 0;
+    }
+
+    100% {
+        margin-left: -50%
+    }
+}
+
+@media (max-width: 1250px) {
+    .container{
+        max-width:1100px ;
+    }
+    .how-content {
+        &__tabs {
+            &-nav {
+                gap: 150px;
+                &-btn {
+                    font-size: 60px;
+                }
+
+                .active::before {
+                    width: 25px;
+                    height: 25px;
+                }
+
+                .active {}
+            }
+
+            &-content {
+                gap: 20px;
+                padding-left: 30px;
+                &-item {
+
+                    p {
+                        font-size: 18px;
+                    }
+
+                    h3 {
+                        font-size: 18px;
+                    }
+
+                    span {
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1010px) {
+    .container{
+        max-width:960px ;
+    }
+    .how-content {
+        &__title{
+            font-size: 50px;
+        }
+        &__tabs {
+            &-nav {
+                gap: 100px;
+                &-btn {
+                    font-size: 60px;
+                }
+
+                .active::before {}
+
+                .active {}
+            }
+
+            &-content {
+                gap: 0px;
+                &-item {
+
+                    p {
+                        font-size: 15px;
+                    }
+
+                    h3 {
+                        font-size: 15px;
+                    }
+
+                    span {
+                        font-size: 15px;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+@media (max-width: 900px) {
+.container{
+        max-width:960px ;
+    }
+    .how-content {
+        padding-top: 32px;
+        &__title{
+            font-size: 50px;
+        }
+        &__line{
+            margin-top: 350px;
+            width: 549px;
+            height: 1px;
+            transform: rotate(-90deg);
+        }
+        &__tabs {
+            padding-top: 0;
+            margin-bottom: 00px;
+            &-nav {
+                flex-direction: column;
+                gap: 43px;
+                &-btn {
+                    font-size: 60px;
+                }
+
+                .active::before {}
+
+                .active {}
+            }
+
+            &-content {
+                flex-direction: column;
+                gap: 0px;
+                &-item {
+
+                    p {
+                        font-size: 15px;
+                    }
+
+                    h3 {
+                        font-size: 15px;
+                    }
+
+                    span {
+                        font-size: 15px;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+//////////////////////////
+//////////////////////////
+//////////////////////////
+
+.background-grey-clip-path {
+    transform: translateY(-130px);
+    background-color: #171717;
+    width: 100%;
+    height: auto;
+    clip-path: polygon(0 16.5%, 100% 0, 100% 100%, 0 100%);
+    margin-bottom: 0px;
+    // z-index: -3;
+}
+
+.money-content {
+    padding-top: 332px;
+    display: flex;
+    flex-direction: column;
+    gap:50px;
+    justify-content: center;
+    align-items: center;
+    &__info {
+        display: flex;
+        gap:314px;
+        // justify-content: space-between;
+        &-first-text {
+            &-underline {
+                color: #FAFF00;
+                font-family: 'Raleway';
+                font-size: 30px;
+                font-style: italic;
+                font-weight: 500;
+                line-height: normal;
+                position: relative;
+                max-width: 150px;;
+            }
+
+            &-underline:before {
+                position: absolute;
+                content: '';
+                width: 100%;
+                height: 2px;
+                background-color: #D1A954;
+                left: -10px;
+                bottom: -5px;
+                transform: scaleX(0);
+                transition: transform 0.25s;
+                transform-origin: left;
+            }
+            
+            &-underline:hover:before {
+                transform: scaleX(1);
+                transition: transform 0.25s;
+            }
+
+            &-big {
+                color: #FFF;
+                font-family: 'Orbitron', sans-serif;
+                font-size: 75px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                text-transform: uppercase;
+            }
+        }
+        &-second-text {
+            &-underline {
+                color: #FAFF00;
+                font-family: 'Raleway';
+                font-size: 30px;
+                font-style: italic;
+                font-weight: 500;
+                line-height: normal;
+                position: relative;
+                max-width: 77px;
+            }
+            &-underline:before {
+                position: absolute;
+                content: '';
+                width: 100%;
+                height: 2px;
+                background-color: #D1A954;
+                left: -10px;
+                bottom: -5px;
+                transform: scaleX(0);
+                transition: transform 0.25s;
+                transform-origin: left;
+            }
+            
+            &-underline:hover:before {
+                transform: scaleX(1);
+                transition: transform 0.25s;
+            }
+            &-big {
+                color: #FFF;
+                font-family: 'Orbitron', sans-serif;
+                font-size: 75px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    .register-button {
+    }
+    .register-button-text {
+    }
+    .arrow-bottom {
+    }
+}
+
+@media (max-width: 1100px) {
+    .money-content{
+
+    }
+}
