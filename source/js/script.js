@@ -46,41 +46,6 @@ function onTabClick(item) {
 
 document.querySelector('.how-content__tabs-nav-btn').click();
 
-////////////////////////////
-
-// let elem = document.querySelector(".how-content__tabs-line-square");
-// let rect = elem.getBoundingClientRect();
-// for (const key in rect) {
-//   if (typeof rect[key] !== "function") {
-//     let para = document.createElement("p");
-//     para.textContent = `${key} : ${rect[key]}`;
-//     document.body.appendChild(para);
-//   }
-// }
-
-// document.addEventListener('DOMContentLoaded', function () {
-//   let swiper = new Swiper(".shinobi-swiper", {
-//     spaceBetween: 0,
-//     centerSlides: 'true',
-//     fade: 'true',
-//     loop: true,
-//     speed: 1500,
-//     autoplay: {
-//       delay: 0,
-//     },
-//     breakpoints: {
-//       1920: {
-//         slidesPerView: 4,
-//         spaceBetween: 0,
-//       },
-//       420: {
-//         slidesPerView: 2.3,
-//         spaceBetween: 0,
-//       }
-//     },
-//   });
-// });
-
 ////////////////////////////////
 
 let outer = document.querySelector(".shinobi-outer");
