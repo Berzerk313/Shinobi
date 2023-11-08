@@ -1576,11 +1576,11 @@ body {
 }
 
 .background-grey-clip-path {
-    transform: translateY(-1230px);
+    transform: translateY(-1700px);
     background-color: #171717;
     width: 100%;
     height: auto;
-    clip-path: polygon(0 16.5%, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(0 17%, 100% 2%, 100% 100%, 0% 100%);
     margin-bottom: 0px;
     z-index: -3;
 }
@@ -1752,8 +1752,6 @@ body {
     
 }
 
-
-
 @media (max-width: 1250px) {
 
     .how-content {  
@@ -1761,6 +1759,7 @@ body {
             
             &-nav {
                 gap: 150px;
+
                 &-btn {
                     font-size: 60px;
                 }
@@ -1860,6 +1859,8 @@ body {
             padding: 250px 0 0 450px;
             transform: translateY(-200px) translateX(-300px);
             &-nav::before{
+                content: '';
+                position: absolute;
                 width: 549px;
                 height: 1px;
                 top: 540px;
@@ -1932,7 +1933,7 @@ body {
 
 
 .money-content {
-    padding-top: 332px;
+    padding-top: 322px;
     display: flex;
     flex-direction: column;
     gap:50px;
@@ -1943,6 +1944,7 @@ body {
         gap:314px;
         // justify-content: space-between;
         &-first-text {
+            padding-left: 20px;
             &-underline {
                 color: #FAFF00;
                 font-family: 'Raleway';
@@ -1951,7 +1953,9 @@ body {
                 font-weight: 500;
                 line-height: normal;
                 position: relative;
-                max-width: 150px;;
+                max-width: 150px;
+                transform:  translateX(-100px);
+                padding-top: 0px;
             }
 
             &-underline:before {
@@ -1980,9 +1984,11 @@ body {
                 font-weight: 700;
                 line-height: normal;
                 text-transform: uppercase;
+                padding-top: 26px;
             }
         }
         &-second-text {
+            padding-left: 20px;
             &-underline {
                 color: #FAFF00;
                 font-family: 'Raleway';
@@ -1992,6 +1998,7 @@ body {
                 line-height: normal;
                 position: relative;
                 max-width: 77px;
+                transform:  translateX(-52px);
             }
             &-underline:before {
                 position: absolute;
@@ -2018,6 +2025,7 @@ body {
                 font-weight: 700;
                 line-height: normal;
                 text-transform: uppercase;
+                padding-top: 26px;
             }
         }
     }
@@ -2030,8 +2038,111 @@ body {
     }
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1220px) {
     .money-content{
+        &__info{
+            gap:80px;
+            &-first-text {
+                &-underline {
+                    font-size: 26px;
+                    transform:  translateX(-60px);
+                }
 
+            }
+            &-second-text {
+                &-underline {
+                    font-size: 26px;
+                    transform:  translateX(-60px);
+                }
+                &-big {
+                    font-size: 60px;
+                    
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 860px) {
+
+    .background-grey-clip-path{
+        clip-path: polygon(0 11%, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    .money-content{
+        &__info{
+             gap:80px;
+             flex-direction: column;
+             &-first-text {
+                &-underline {
+                    font-size: 20px;
+                    width: 100px;
+                    transform:  translateX(-50px);
+                }
+                &-big {
+                    font-size: 40px;
+                    text-align: center;
+                }
+            }
+            &-second-text {
+                &-underline {
+                    font-size: 20px;
+                    width: 57px;
+                    transform:  translateX(-50px);
+                }
+                &-big {
+                    font-size: 40px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+}
+
+@media (max-width: 420px) {
+    .background-black-clip-path{
+        clip-path: polygon(0 0, 100% 0, 100% 96%, 0% 100%);
+    }
+    .background-grey-clip-path{
+        clip-path: polygon(0 12%, 100% 8%, 100% 100%, 0% 100%);
+    }
+    .money-content{
+        padding-top: 184px;
+        &__info{
+            gap: 54px;
+            &-first-text {  
+                &-big {
+                    padding-top: 40px;
+                    padding-right: 14px;
+
+                }
+            }
+            &-second-text {
+                &-big {
+                    padding-top: 36px;
+                    padding-right: 28px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 370px) {
+    .money-content{
+        &__info{
+             gap:80px;
+             flex-direction: column;
+             &-first-text {
+                &-underline {
+                    transform:  translateX(-30px);
+                }
+            }
+            &-second-text {
+                &-underline {
+                    transform:  translateX(-30px);
+                }
+            }
+        }
     }
 }
