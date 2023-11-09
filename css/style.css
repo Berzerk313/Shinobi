@@ -1889,4 +1889,15 @@ body {
   .can-content__rows .arrow-bottom {
     display: none;
   }
+}
+@media (max-width: 380px) {
+  .can-content__title-first {
+    font-size: 22px;
+  }
+  .can-content__title-first span {
+    font-size: 22px;
+  }
+  .can-content__rows .can-content__row {
+    padding-left: 30px;
+  }
 }/*# sourceMappingURL=style.css.map */

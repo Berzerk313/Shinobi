@@ -2400,6 +2400,24 @@ body {
     } 
 }
 
+@media (max-width: 380px) {
+    .can-content{
+        &__title{
+            &-first{
+                font-size: 22px;
+                span{
+                    font-size: 22px;
+                }
+            }
+        }
+        &__rows{
+            .can-content__row{
+                padding-left: 30px;
+            }
+        }
+    }
+}
+
 
 
 
