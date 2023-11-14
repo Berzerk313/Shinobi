@@ -1534,27 +1534,40 @@ body {
 ////////////////////////////
 ////////////////////////////
 
-.background-clip-path-wrapper {
-    position: relative;
-    height: 2310px;
-}
+.shinobi-outer {
+   width: 100%;
+//    overflow: hidden;
+   position: relative;
+//    z-index: 100;
 
-.shinobi-outer {}
+}
 
 .shinobi-outer div {
     display: inline-block;
-    transform: rotate(-3.867deg) translateY(-400px);
     margin-bottom: 200px;
     margin-top: 300px;
     position: relative;
     z-index: 100;
-
+    transform: rotate(-3.867deg) translateY(-600px);
 }
 
-.shinobi-loop {
-    white-space: nowrap;
-    animation: loop-anim 15s linear infinite;
-}
+// .shinobi-loop {
+//     white-space: nowrap;
+//     animation: loop-anim 15s linear infinite;
+//     position: absolute;
+//     font-size: 100px;
+//     font-weight: 500;
+//     line-height: normal;
+//     text-transform: uppercase;
+//     font-family: 'Orbitron', sans-serif;
+//     color: #88888885;
+//     z-index: 100;
+//     h4{
+//         font-size: 100px;
+
+//     }
+
+// }
 
 .shinobi-loop__content {
     font-family: 'Orbitron', sans-serif;
@@ -1564,25 +1577,33 @@ body {
     line-height: normal;
     text-transform: uppercase;
     color: #88888885;
+    white-space: nowrap;
+
 
 }
 
 @keyframes loop-anim {
-    0% {
-        margin-left: 0;
-    }
+    // 0% {
+    //     margin-left: 0;
+    // }
 
-    100% {
-        margin-left: -50%
+    // 100% {
+    //     margin-left: -50%
+    // }
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(-100%);
     }
 }
 
 .background-grey-clip-path {
-    transform: translateY(-1700px);
+    transform: translateY(-60px);
     background-color: #171717;
     width: 100%;
     height: 2310px;
-    clip-path: polygon(0 3%, 100% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(0 5%, 100% 0, 100% 100%, 0% 100%);
     margin-bottom: 0px;
     z-index: -3;
 }
@@ -1639,20 +1660,14 @@ body {
         }
     }
 
-    // &__tabs::before{
-    //     content: '';
-    //     position: absolute;
-    //     width: 100%;
-    //     height: 1px;
-    //     background-color: rgba(255, 255, 255, 0.63);
-    // }
     &__tabs {
         padding-top: 133px;
+        position: relative;
 
         &-nav::before {
             content: '';
             position: absolute;
-            top: 355px;
+            top: 135px;
             left: 0;
             width: 100%;
             height: 1px;
@@ -1664,6 +1679,7 @@ body {
             display: flex;
             gap: 200px;
             align-items: center;
+            
 
             &-btn {
                 color: rgba(255, 255, 255, 0.31);
@@ -1776,6 +1792,9 @@ body {
 
                 .active {}
             }
+            &-nav::before{
+                top: 130px;
+            }
 
             &-content {
                 gap: 20px;
@@ -1825,10 +1844,6 @@ body {
         }
 
         &__tabs {
-            &-nav::before {
-                top: 320px;
-            }
-
             &-nav {
                 gap: 100px;
 
@@ -1870,6 +1885,11 @@ body {
         height: 1000px;
         margin-bottom: -20px;
     }
+
+    .background-grey-clip-path {
+        clip-path: polygon(0 3%, 100% 0, 100% 100%, 0% 100%);
+    }
+    
 
     // .container{
     //     width: 800px;   
@@ -2336,12 +2356,10 @@ body {
 }
 
 @media (max-width: 420px) {
-    .background-clip-path-wrapper {
-        height: 1820px;
-    }
-
     .background-grey-clip-path {
-        height: 1794px;
+        height: 1724px;
+        transform: translateY(-220px);
+        clip-path: polygon(0 2%, 100% 0, 100% 100%, 0% 100%);
     }
 
     .how-content {
@@ -2416,7 +2434,7 @@ body {
 
 
 .money-content {
-    padding-top: 322px;
+    padding-top: 308px;
     display: flex;
     flex-direction: column;
     gap: 50px;
@@ -2557,10 +2575,6 @@ body {
 
 @media (max-width: 860px) {
 
-    .background-grey-clip-path {
-        clip-path: polygon(0 3%, 100% 0, 100% 100%, 0% 100%);
-    }
-
     .money-content {
         &__info {
             gap: 80px;
@@ -2597,17 +2611,8 @@ body {
 }
 
 @media (max-width: 420px) {
-    .background-black-clip-path {
-        clip-path: polygon(0 0, 100% 0, 100% 96%, 0% 100%);
-    }
-
-    .background-grey-clip-path {
-        clip-path: polygon(0 3%, 100% 0%, 100% 100%, 0% 100%);
-        transform: translateY(-1916px);
-    }
-
     .money-content {
-        padding-top: 184px;
+        padding-top: 114px;
 
         &__info {
             gap: 54px;
@@ -3475,7 +3480,7 @@ body {
 .background-black-second {
     background-color: rgb(12, 11, 14);
     height: auto;
-    margin-top: 690px;
+    margin-top: -72px;
 }
 
 .who-content {
@@ -3563,9 +3568,6 @@ body {
 }
 
 @media (max-width: 1240px) {
-    .background-black-second {
-        margin-top: 640px;
-    }
 
     .who-content {
         &__cards {
@@ -3574,26 +3576,24 @@ body {
     }
 }
 
-@media (max-width: 1240px) {
-    .background-black-second {
-        margin-top: 480px;
-    }
+// @media (max-width: 1240px) {
+//     .background-black-second {
+//         margin-top: 480px;
+//     }
 
-    .who-content {
-        &__title {
-            font-size: 50px;
-        }
+//     .who-content {
+//         &__title {
+//             font-size: 50px;
+//         }
 
-        &__cards {
-            gap: 50px;
-        }
-    }
-}
+//         &__cards {
+//             gap: 50px;
+//         }
+//     }
+// }
 
 @media (max-width: 1000px) {
-    .background-black-second {
-        margin-top: 420px;
-    }
+   
 
     .who-content {
         &__cards {
@@ -3634,9 +3634,7 @@ body {
 }
 
 @media (max-width: 900px) {
-    .background-black-second {
-        margin-top: 620px;
-    }
+    
     .who-content{
         &__cards{
             gap:18px;
@@ -3645,9 +3643,7 @@ body {
 }
 
 @media (max-width: 860px) {
-    .background-black-second {
-        margin-top: 900px;
-    }
+    
     .who-content{
         &__title{
             font-size: 40px;
@@ -3659,17 +3655,7 @@ body {
     }
 }
 
-
-@media (max-width: 770px) {
-    .background-black-second {
-        margin-top: 860px;
-    }
-}
-
 @media (max-width: 640px) {
-    .background-black-second {
-        margin-top: 890px;
-    }
     .who-content{
         &__title{
             font-size: 30px;
@@ -3677,20 +3663,12 @@ body {
     }
 }
 
-@media (max-width: 560px) {
-    .background-black-second {
-        margin-top: 800px;
-    }
-}
-
 @media (max-width: 520px) {
-    .background-black-second {
-        margin-top: 600px;
-    }
     .who__arrow-bottom{
         display: none;
     }
     .who-content{
+        padding-top: 28px;
         &__cards{
             padding-bottom: 121px;
             &-card {
@@ -3731,7 +3709,7 @@ body {
 
 @media (max-width: 420px) {
     .background-black-second {
-        margin-top: 624px;
+        margin-top: -220px;
     }
     .who-content{
         &__cards{
@@ -3764,5 +3742,55 @@ body {
             }
         }
         
+    }
+}
+
+////////////////////////////
+
+.result{
+    &-content{
+        
+    }
+    &-top{
+
+    }
+    &-bottom{
+        &__circle{
+            width: 358px;
+            height: 358px;
+            border-radius: 50%;
+            background-color: #171717;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &-border{
+                width: 303px;
+                height: 303px;
+                border-radius: 50%;
+                border: 2px solid #FFF;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            &-title{
+                color: #888;
+                text-align: center;
+                font-family: 'Raleway';
+                font-size: 26px;
+                font-style: italic;
+                font-weight: 500;
+                line-height: 155.4%; /* 40.404px */
+            }
+            &-subtitle{
+                color: #FFF;
+                text-align: center;
+                font-family: 'Raleway';
+                font-size: 35px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 155.4%; /* 54.39px */
+            }
+        }
     }
 }

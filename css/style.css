@@ -1218,23 +1218,18 @@ body {
     right: 0px;
   }
 }
-.background-clip-path-wrapper {
+.shinobi-outer {
+  width: 100%;
   position: relative;
-  height: 2310px;
 }
 
 .shinobi-outer div {
   display: inline-block;
-  transform: rotate(-3.867deg) translateY(-400px);
   margin-bottom: 200px;
   margin-top: 300px;
   position: relative;
   z-index: 100;
-}
-
-.shinobi-loop {
-  white-space: nowrap;
-  animation: loop-anim 15s linear infinite;
+  transform: rotate(-3.867deg) translateY(-600px);
 }
 
 .shinobi-loop__content {
@@ -1245,23 +1240,24 @@ body {
   line-height: normal;
   text-transform: uppercase;
   color: rgba(136, 136, 136, 0.5215686275);
+  white-space: nowrap;
 }
 
 @keyframes loop-anim {
   0% {
-    margin-left: 0;
+    transform: translateX(100%);
   }
   100% {
-    margin-left: -50%;
+    transform: translateX(-100%);
   }
 }
 .background-grey-clip-path {
-  transform: translateY(-1700px);
+  transform: translateY(-60px);
   background-color: #171717;
   width: 100%;
   height: 2310px;
-  -webkit-clip-path: polygon(0 3%, 100% 0, 100% 100%, 0% 100%);
-          clip-path: polygon(0 3%, 100% 0, 100% 100%, 0% 100%);
+  -webkit-clip-path: polygon(0 5%, 100% 0, 100% 100%, 0% 100%);
+          clip-path: polygon(0 5%, 100% 0, 100% 100%, 0% 100%);
   margin-bottom: 0px;
   z-index: -3;
 }
@@ -1309,11 +1305,12 @@ body {
 }
 .how-content__tabs {
   padding-top: 133px;
+  position: relative;
 }
 .how-content__tabs-nav::before {
   content: "";
   position: absolute;
-  top: 355px;
+  top: 135px;
   left: 0;
   width: 100%;
   height: 1px;
@@ -1406,6 +1403,9 @@ body {
     width: 25px;
     height: 25px;
   }
+  .how-content__tabs-nav::before {
+    top: 130px;
+  }
   .how-content__tabs-content {
     gap: 20px;
     padding-left: 30px;
@@ -1439,9 +1439,6 @@ body {
   .how-content__title {
     font-size: 50px;
   }
-  .how-content__tabs-nav::before {
-    top: 320px;
-  }
   .how-content__tabs-nav {
     gap: 100px;
   }
@@ -1465,6 +1462,10 @@ body {
   .background-black-clip-path {
     height: 1000px;
     margin-bottom: -20px;
+  }
+  .background-grey-clip-path {
+    -webkit-clip-path: polygon(0 3%, 100% 0, 100% 100%, 0% 100%);
+            clip-path: polygon(0 3%, 100% 0, 100% 100%, 0% 100%);
   }
   .how-content {
     padding-top: 32px;
@@ -1756,11 +1757,11 @@ body {
   }
 }
 @media (max-width: 420px) {
-  .background-clip-path-wrapper {
-    height: 1820px;
-  }
   .background-grey-clip-path {
-    height: 1794px;
+    height: 1724px;
+    transform: translateY(-220px);
+    -webkit-clip-path: polygon(0 2%, 100% 0, 100% 100%, 0% 100%);
+            clip-path: polygon(0 2%, 100% 0, 100% 100%, 0% 100%);
   }
   .how-content__tabs {
     padding-top: 220px;
@@ -1809,7 +1810,7 @@ body {
   }
 }
 .money-content {
-  padding-top: 322px;
+  padding-top: 308px;
   display: flex;
   flex-direction: column;
   gap: 50px;
@@ -1918,10 +1919,6 @@ body {
   }
 }
 @media (max-width: 860px) {
-  .background-grey-clip-path {
-    -webkit-clip-path: polygon(0 3%, 100% 0, 100% 100%, 0% 100%);
-            clip-path: polygon(0 3%, 100% 0, 100% 100%, 0% 100%);
-  }
   .money-content__info {
     gap: 80px;
     flex-direction: column;
@@ -1946,17 +1943,8 @@ body {
   }
 }
 @media (max-width: 420px) {
-  .background-black-clip-path {
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 96%, 0% 100%);
-            clip-path: polygon(0 0, 100% 0, 100% 96%, 0% 100%);
-  }
-  .background-grey-clip-path {
-    -webkit-clip-path: polygon(0 3%, 100% 0%, 100% 100%, 0% 100%);
-            clip-path: polygon(0 3%, 100% 0%, 100% 100%, 0% 100%);
-    transform: translateY(-1916px);
-  }
   .money-content {
-    padding-top: 184px;
+    padding-top: 114px;
   }
   .money-content__info {
     gap: 54px;
@@ -2597,7 +2585,7 @@ body {
 .background-black-second {
   background-color: rgb(12, 11, 14);
   height: auto;
-  margin-top: 690px;
+  margin-top: -72px;
 }
 
 .who-content {
@@ -2674,28 +2662,11 @@ body {
 }
 
 @media (max-width: 1240px) {
-  .background-black-second {
-    margin-top: 640px;
-  }
   .who-content__cards {
     gap: 100px;
   }
 }
-@media (max-width: 1240px) {
-  .background-black-second {
-    margin-top: 480px;
-  }
-  .who-content__title {
-    font-size: 50px;
-  }
-  .who-content__cards {
-    gap: 50px;
-  }
-}
 @media (max-width: 1000px) {
-  .background-black-second {
-    margin-top: 420px;
-  }
   .who-content__cards-card-rectangle {
     width: 400px;
     height: 340px;
@@ -2723,17 +2694,11 @@ body {
   }
 }
 @media (max-width: 900px) {
-  .background-black-second {
-    margin-top: 620px;
-  }
   .who-content__cards {
     gap: 18px;
   }
 }
 @media (max-width: 860px) {
-  .background-black-second {
-    margin-top: 900px;
-  }
   .who-content__title {
     font-size: 40px;
   }
@@ -2742,30 +2707,17 @@ body {
     gap: 18px;
   }
 }
-@media (max-width: 770px) {
-  .background-black-second {
-    margin-top: 860px;
-  }
-}
 @media (max-width: 640px) {
-  .background-black-second {
-    margin-top: 890px;
-  }
   .who-content__title {
     font-size: 30px;
   }
 }
-@media (max-width: 560px) {
-  .background-black-second {
-    margin-top: 800px;
-  }
-}
 @media (max-width: 520px) {
-  .background-black-second {
-    margin-top: 600px;
-  }
   .who__arrow-bottom {
     display: none;
+  }
+  .who-content {
+    padding-top: 28px;
   }
   .who-content__cards {
     padding-bottom: 121px;
@@ -2797,7 +2749,7 @@ body {
 }
 @media (max-width: 420px) {
   .background-black-second {
-    margin-top: 624px;
+    margin-top: -220px;
   }
   .who-content__cards {
     padding-top: 60px;
@@ -2818,4 +2770,41 @@ body {
     top: 20px;
     left: 10px;
   }
+}
+.result-bottom__circle {
+  width: 358px;
+  height: 358px;
+  border-radius: 50%;
+  background-color: #171717;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.result-bottom__circle-border {
+  width: 303px;
+  height: 303px;
+  border-radius: 50%;
+  border: 2px solid #FFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.result-bottom__circle-title {
+  color: #888;
+  text-align: center;
+  font-family: "Raleway";
+  font-size: 26px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 155.4%; /* 40.404px */
+}
+.result-bottom__circle-subtitle {
+  color: #FFF;
+  text-align: center;
+  font-family: "Raleway";
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 155.4%; /* 54.39px */
 }/*# sourceMappingURL=style.css.map */
