@@ -2964,6 +2964,11 @@ body {
   }
 }
 
+@media (max-width: 1900px) {
+  .result-bottom__ellipse {
+    left: 34%;
+  }
+}
 @media (max-width: 1600px) {
   .result-bottom__ellipse {
     left: 33%;

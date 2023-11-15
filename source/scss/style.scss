@@ -3986,6 +3986,16 @@ body {
     }
 }
 
+@media (max-width: 1900px) {
+    .result {
+        &-bottom {
+            &__ellipse {
+                left: 34%;
+            }
+        }
+    }
+}
+
 @media (max-width: 1600px) {
     .result {
         &-bottom {
