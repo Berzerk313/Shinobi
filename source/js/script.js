@@ -65,3 +65,21 @@ function repeatContent(el, till) {
         counter += 1;
     }
 }
+
+let outer2 = document.querySelector(".result-outer");
+let content2 = outer2.querySelector('.result-loop__content');
+
+repeatContent(content2, outer2.offsetWidth);
+
+let el = outer2.querySelector('.result-loop');
+el.innerHTML = el.innerHTML + el.innerHTML;
+
+function repeatContent(el, till) {
+    let html = el.innerHTML;
+    let counter = 0; 
+    
+    while (el.offsetWidth < till && counter < 100) {
+        el.innerHTML += html;
+        counter += 1;
+    }
+}
