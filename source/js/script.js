@@ -16,7 +16,7 @@ if (mainBurger) {
   });
 }
 
-///////////////////////
+// ///////////////////////
 
 const tabsBtn = document.querySelectorAll(".how-content__tabs-nav-btn");
 const tabsItems = document.querySelectorAll(".how-content__tabs-content-item");
@@ -46,7 +46,7 @@ function onTabClick(item) {
 
 document.querySelector('.how-content__tabs-nav-btn').click();
 
-////////////////////////////////
+// ////////////////////////////////
 
 // let outer = document.querySelector(".shinobi-outer");
 // let content = outer.querySelector('.shinobi-loop__content');
@@ -67,18 +67,18 @@ document.querySelector('.how-content__tabs-nav-btn').click();
 //     }
 // }
 
-/////////////////////////////////
+// /////////////////////////////////
 
 // let outer2 = document.querySelector(".result-outer");
 // let content2 = outer2.querySelector('.result-loop__content');
 
 // repeatContent(content2, outer2.offsetWidth);
 
-// let el = outer2.querySelector('.result-loop');
-// el.innerHTML = el.innerHTML + el.innerHTML;
+// let el2 = outer2.querySelector('.result-loop');
+// el2.innerHTML = el2.innerHTML + el2.innerHTML;
 
-// function repeatContent(el, till) {
-//     let html = el.innerHTML;
+// function repeatContent(el2, till) {
+//     let html = el2.innerHTML;
 //     let counter = 0; 
     
 //     while (el.offsetWidth < till && counter < 100) {
@@ -86,3 +86,42 @@ document.querySelector('.how-content__tabs-nav-btn').click();
 //         counter += 1;
 //     }
 // }
+
+/////////////////////////////////
+
+document.addEventListener('DOMContentLoaded', function () {
+  let swiper = new Swiper(".back-test-swiper", {
+
+    // effect: "coverflow",
+    // grabCursor: true,
+    // centeredSlides: true,
+    // slidesPerView: "auto",
+    // coverflowEffect: {
+    //   rotate: 0,
+    //   stretch: 0,
+    //   depth: 100,
+    //   modifier: 2,
+    //   slideShadows: true,
+    // },
+    // slidesPerView:'auto',
+    // spaceBetween:85,
+    // initialSlide:1,
+    // centerSlides: 'true',
+    // loop: true,
+
+    loop: true,
+    centeredSlides: 'true',
+    centerSlides: 'true',
+    // fade: 'true',
+    // grabCursor: true,
+    // slidesPerGroup: 2,
+    // initialSlide: 2,
+    breakpoints: {
+      1920: {
+        slidesPerView: 2.333,
+        spaceBetween: 200,
+      },
+    },
+  });
+});
+
