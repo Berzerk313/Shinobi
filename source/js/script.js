@@ -91,35 +91,41 @@ document.querySelector('.how-content__tabs-nav-btn').click();
 
 document.addEventListener('DOMContentLoaded', function () {
   let swiper = new Swiper(".back-test-swiper", {
-
-    // effect: "coverflow",
-    // grabCursor: true,
-    // centeredSlides: true,
-    // slidesPerView: "auto",
-    // coverflowEffect: {
-    //   rotate: 0,
-    //   stretch: 0,
-    //   depth: 100,
-    //   modifier: 2,
-    //   slideShadows: true,
-    // },
-    // slidesPerView:'auto',
-    // spaceBetween:85,
-    // initialSlide:1,
-    // centerSlides: 'true',
-    // loop: true,
-
     loop: true,
     centeredSlides: 'true',
     centerSlides: 'true',
-    // fade: 'true',
-    // grabCursor: true,
-    // slidesPerGroup: 2,
-    // initialSlide: 2,
     breakpoints: {
       1920: {
         slidesPerView: 2.333,
         spaceBetween: 200,
+      },
+      1440: {
+        slidesPerView: 2.333,
+        spaceBetween: 200,
+      },
+      1100: {
+        slidesPerView: 2.1,
+        spaceBetween: 250,
+      },
+      880: {
+        slidesPerView: 2.1,
+        spaceBetween: 300,
+      },
+      800: {
+        slidesPerView: 2.1,
+        spaceBetween: 350,
+      },
+      768: {
+        slidesPerView: 2.1,
+        spaceBetween: 250,
+      },
+      650: {
+        slidesPerView: 2.1,
+        spaceBetween: 250,
+      },
+      320: {
+        slidesPerView: 2.1,
+        spaceBetween: 250,
       },
     },
   });

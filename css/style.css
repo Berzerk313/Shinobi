@@ -3214,7 +3214,7 @@ body {
   }
   .result-bottom__text {
     font-size: 12px;
-    padding: 148px 15px 0 15px;
+    padding: 248px 15px 0 15px;
   }
   .result-bottom__text span {
     font-size: 12px;
@@ -3281,23 +3281,18 @@ body {
 }
 .back-test-swiper {
   padding: 100px 0;
-  width: 100%;
-  height: auto;
 }
-.back-test-swiper-wrapper {
-  width: 100%;
-  height: auto;
-}
-.back-test-swiper .swiper-slide-active {
+.back-test .swiper-slide-active {
   transform: scale(1.3);
 }
-.back-test-swiper .swiper-slide-active .back-test__img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+.back-test .swiper-slide-active .back-test-slide {
+  transition: all 0.5s ease;
+  transform: scale(1.3);
 }
-.back-test-swiper-slide {
+.back-test .swiper-slide-active .back-test__img {
+  transform: scale(1.3);
+}
+.back-test-slide {
   width: auto;
   max-height: 500px;
   transition: all 0.5s ease;
@@ -3311,4 +3306,374 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media (max-width: 1550px) {
+  .back-test__img {
+    width: 594px;
+    height: 313px;
+  }
+}
+@media (max-width: 1350px) {
+  .back-test__img {
+    width: 494px;
+    height: 263px;
+  }
+}
+@media (max-width: 1100px) {
+  .back-test__title {
+    font-size: 50px;
+  }
+}
+@media (max-width: 800px) {
+  .back-test__title {
+    font-size: 40px;
+  }
+  .back-test__img {
+    width: 394px;
+    height: 213px;
+  }
+}
+@media (max-width: 650px) {
+  .back-test__title {
+    font-size: 30px;
+  }
+  .back-test__img {
+    width: 269px;
+    height: 141px;
+  }
+}
+@media (max-width: 420px) {
+  .back-test__title {
+    padding-top: 250px;
+    font-size: 30px;
+  }
+}
+.price__title {
+  padding-top: 225px;
+  color: #FFF;
+  font-family: "Orbitron", sans-serif;
+  font-size: 75px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  text-align: center;
+}
+.price__title span {
+  color: #0C0B0E;
+  background: #EAFC52;
+}
+.price-subtitle-block {
+  display: flex;
+  justify-content: center;
+  padding-top: 27px;
+}
+.price__subtitle {
+  max-width: 700px;
+  color: #888;
+  font-family: "Raleway";
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 136.9%;
+  text-align: center;
+}
+.price__subtitle span {
+  color: #FFF;
+}
+.price-rate-block {
+  padding-top: 35px;
+  display: flex;
+  justify-content: center;
+}
+.price__border {
+  max-width: 601px;
+  max-height: 832px;
+  border-radius: 20px;
+  border: 1px solid #EBFC56;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.price-rate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 22px 16px;
+  max-width: 569px;
+  max-height: 788px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.03) 0%, rgba(255, 255, 255, 0.03) 99.48%);
+  box-shadow: -35.9px 35.9px 35.9px 0px rgba(255, 255, 255, 0.03) inset, 35.9px -35.9px 35.9px 0px rgba(0, 0, 0, 0.03) inset;
+  -webkit-backdrop-filter: blur(35.9000015259px);
+          backdrop-filter: blur(35.9000015259px);
+}
+.price-rate-content {
+  display: flex;
+  flex-direction: column;
+}
+.price-rate-content__title {
+  padding-top: 68px;
+  padding-bottom: 19px;
+  color: #EBFC56;
+  text-align: center;
+  font-family: "Raleway";
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 155.4%; /* 69.93px */
+}
+.price-rate-content__rows {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.price-rate-content__row {
+  color: #FFF;
+  font-family: "Raleway";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 116.4%; /* 23.28px */
+  position: relative;
+  padding-left: 56px;
+  max-width: 550px;
+}
+.price-rate-content__row::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 25px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #EBFC56;
+}
+.price-rate-content-discount-block {
+  margin-top: 53px;
+  width: 569px;
+  height: 64px;
+  background: linear-gradient(180deg, #1B1B1B 0%, rgba(27, 27, 27, 0) 100%);
+  box-shadow: 0px 4px 15px 0px #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.price-rate-content__discount {
+  color: #EBFC56;
+  text-align: center;
+  font-family: "Raleway";
+  font-size: 25px;
+  font-style: italic;
+  font-weight: 600;
+  line-height: normal;
+}
+.price-rate-content__dollars-first {
+  padding-top: 11px;
+  color: rgba(255, 255, 255, 0.45);
+  text-align: center;
+  font-family: "Raleway";
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 155.4%; /* 54.39px */
+  position: relative;
+}
+.price-rate-content__dollars-first::before {
+  content: "";
+  position: absolute;
+  top: 40px;
+  left: 190px;
+  width: 186px;
+  height: 3px;
+  background-color: rgba(255, 255, 255, 0.45);
+}
+.price-rate-content__dollars-second {
+  color: #FFF;
+  text-align: center;
+  font-family: "Raleway";
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 155.4%; /* 69.93px */
+}
+.price-rate-content__text {
+  padding-top: 12px;
+  padding-bottom: 56px;
+  color: #BABABA;
+  text-align: center;
+  font-family: "Raleway";
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 155.4%; /* 31.08px */
+}
+
+.price__buttons {
+  padding-top: 53px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 53px;
+}
+
+@media (max-width: 1100px) {
+  .price__title {
+    font-size: 50px;
+  }
+  .price__subtitle {
+    font-size: 20px;
+  }
+}
+@media (max-width: 800px) {
+  .price__title {
+    font-size: 40px;
+  }
+  .price__subtitle {
+    font-size: 16px;
+  }
+  .price__border {
+    max-width: 601px;
+    max-height: 832px;
+    border-radius: 15px;
+    border: 0.75px solid #EBFC56;
+  }
+  .price-rate {
+    margin: 16px 12px;
+    max-width: 399px;
+    max-height: 588px;
+    border-radius: 15px;
+    border: 0.75px solid rgba(255, 255, 255, 0);
+  }
+  .price-rate-content__title {
+    padding-top: 50px;
+    padding-bottom: 15px;
+    font-size: 35px;
+  }
+  .price-rate-content__rows {
+    gap: 14px;
+  }
+  .price-rate-content__row {
+    font-size: 15px;
+    font-weight: 500;
+    padding-left: 56px;
+    max-width: 550px;
+  }
+  .price-rate-content__row::before {
+    top: 3px;
+    left: 25px;
+    width: 12px;
+    height: 12px;
+  }
+  .price-rate-content-discount-block {
+    margin-top: 33px;
+    width: 399px;
+    height: 54px;
+  }
+  .price-rate-content__discount {
+    font-size: 20px;
+  }
+  .price-rate-content__dollars-first {
+    padding-top: 11px;
+    font-size: 27px;
+  }
+  .price-rate-content__dollars-first::before {
+    top: 32px;
+    left: 125px;
+    width: 146px;
+    height: 3px;
+  }
+  .price-rate-content__dollars-second {
+    font-size: 35px;
+  }
+  .price-rate-content__text {
+    padding-top: 12px;
+    padding-bottom: 56px;
+    font-size: 16px;
+  }
+}
+@media (max-width: 610px) {
+  .price__title {
+    font-size: 30px;
+  }
+  .price__subtitle {
+    font-size: 13px;
+  }
+}
+@media (max-width: 550px) {
+  .price__title {
+    font-size: 30px;
+  }
+  .price__subtitle {
+    font-size: 13px;
+  }
+  .price__border {
+    max-width: 601px;
+    max-height: 832px;
+    border-radius: 15px;
+    border: 0.75px solid #EBFC56;
+  }
+  .price-rate {
+    margin: 12px 8px;
+    max-width: 284px;
+    max-height: 426px;
+    border-radius: 15px;
+    border: 0.75px solid rgba(255, 255, 255, 0);
+  }
+  .price-rate-content__title {
+    padding-top: 33px;
+    padding-bottom: 10px;
+    font-size: 22px;
+  }
+  .price-rate-content__rows {
+    gap: 11px;
+  }
+  .price-rate-content__row {
+    font-size: 11px;
+    font-weight: 500;
+    padding-left: 28px;
+    max-width: 550px;
+  }
+  .price-rate-content__row::before {
+    top: 3px;
+    left: 10px;
+    width: 8px;
+    height: 8px;
+  }
+  .price-rate-content-discount-block {
+    margin-top: 16px;
+    width: 284px;
+    height: 32px;
+  }
+  .price-rate-content__discount {
+    font-size: 14px;
+  }
+  .price-rate-content__dollars-first {
+    padding-top: 5.5px;
+    font-size: 18px;
+  }
+  .price-rate-content__dollars-first::before {
+    top: 20px;
+    left: 90px;
+    width: 106px;
+    height: 3px;
+  }
+  .price-rate-content__dollars-second {
+    font-size: 23px;
+  }
+  .price-rate-content__text {
+    padding-top: 5px;
+    padding-bottom: 38.7px;
+    font-size: 11px;
+  }
+}
+@media (max-width: 420px) {
+  .price {
+    padding-bottom: 46px;
+  }
+  .price__buttons {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */
