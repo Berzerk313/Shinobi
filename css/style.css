@@ -3830,4 +3830,164 @@ body {
   .video__arrow-block {
     padding: 89px 0 0 0;
   }
+}
+.candlestorm__title {
+  padding-top: 76px;
+  color: #FFF;
+  font-family: "Orbitron", sans-serif;
+  font-size: 59px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  text-align: center;
+}
+.candlestorm__title span {
+  color: #0C0B0E;
+  background: #EAFC52;
+}
+.candlestorm-content {
+  padding-top: 103px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(370px, 547px));
+  justify-content: center;
+  align-items: center;
+  gap: 71px 66px;
+}
+.candlestorm-content__item {
+  height: 260px;
+  border-radius: 20px;
+  background: #1D1C1F;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+  gap: 15px;
+}
+.candlestorm-content__item-icon {
+  width: 122px;
+  height: 122px;
+}
+.candlestorm-content__item-text {
+  max-width: 442px;
+  color: #FFF;
+  text-align: right;
+  font-family: "Raleway";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-align: center;
+}
+.candlestorm-content__item-circle {
+  position: absolute;
+  top: -80px;
+  right: -40px;
+  width: 200px;
+  height: 200px;
+  background-color: #343339;
+  border-radius: 50%;
+  opacity: 0.4;
+}
+.candlestorm-content__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.candlestorm__arrow-block {
+  padding-top: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 1250px) {
+  .candlestorm__title {
+    font-size: 50px;
+  }
+  .candlestorm-content {
+    gap: 30px;
+  }
+  .candlestorm-content__item {
+    height: 260px;
+    border-radius: 20px;
+  }
+  .candlestorm-content__item-icon {
+    width: 100px;
+    height: 100px;
+  }
+  .candlestorm-content__item-text {
+    max-width: 442px;
+    padding: 0 15px;
+    font-size: 18px;
+  }
+  .candlestorm-content__item-circle {
+    top: -80px;
+    right: -40px;
+    width: 180px;
+    height: 180px;
+  }
+}
+@media (max-width: 1030px) {
+  .candlestorm__title {
+    font-size: 40px;
+  }
+}
+@media (max-width: 950px) {
+  .candlestorm__title {
+    font-size: 40px;
+  }
+}
+@media (max-width: 860px) {
+  .candlestorm__title {
+    font-size: 30px;
+  }
+  .candlestorm-content {
+    grid-template-columns: repeat(1, minmax(370px, 547px));
+    gap: 30px;
+  }
+  .candlestorm-content__button {
+    display: none;
+  }
+}
+@media (max-width: 420px) {
+  .candlestorm__title {
+    font-size: 30px;
+  }
+  .candlestorm-content {
+    grid-template-columns: repeat(1, minmax(370px, 547px));
+  }
+  .candlestorm-content__item {
+    gap: 10px;
+    height: 175.868px;
+    border-radius: 20px;
+  }
+  .candlestorm-content__item-icon {
+    width: 100px;
+    height: 100px;
+  }
+  .candlestorm-content__item-text {
+    max-width: 442px;
+    padding: 0 15px;
+    font-size: 14px;
+  }
+  .candlestorm-content__item-circle {
+    top: -60px;
+    right: -20px;
+    width: 135px;
+    height: 135px;
+  }
+  .candlestorm-content__button {
+    display: none;
+  }
+}
+@media (max-width: 419px) {
+  .candlestorm__title {
+    font-size: 25px;
+  }
+  .candlestorm-content {
+    grid-template-columns: repeat(1, minmax(280px, 547px));
+  }
 }/*# sourceMappingURL=style.css.map */
