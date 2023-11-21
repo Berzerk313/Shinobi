@@ -3946,7 +3946,6 @@ body {
   }
   .candlestorm-content {
     grid-template-columns: repeat(1, minmax(370px, 547px));
-    gap: 30px;
   }
   .candlestorm-content__button {
     display: none;
@@ -3957,10 +3956,12 @@ body {
     font-size: 30px;
   }
   .candlestorm-content {
+    gap: 15px;
+    padding-top: 36px;
+    padding-bottom: 63px;
     grid-template-columns: repeat(1, minmax(370px, 547px));
   }
   .candlestorm-content__item {
-    gap: 10px;
     height: 175.868px;
     border-radius: 20px;
   }
@@ -3982,6 +3983,9 @@ body {
   .candlestorm-content__button {
     display: none;
   }
+  .candlestorm__arrow-block {
+    padding-top: 0;
+  }
 }
 @media (max-width: 419px) {
   .candlestorm__title {
@@ -3989,5 +3993,62 @@ body {
   }
   .candlestorm-content {
     grid-template-columns: repeat(1, minmax(280px, 547px));
+  }
+}
+.disclaimer {
+  padding-top: 65px;
+  text-align: center;
+}
+.disclaimer__title {
+  color: #B20000;
+  font-family: "Raleway";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.disclaimer-subtitle-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.disclaimer__subtitle {
+  max-width: 1047px;
+  padding-top: 21px;
+  padding-bottom: 57px;
+  color: #FFF;
+  text-align: center;
+  font-family: "Raleway";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+@media (max-width: 1250px) {
+  .disclaimer__title {
+    font-size: 35px;
+  }
+  .disclaimer__subtitle {
+    font-size: 15px;
+  }
+}
+@media (max-width: 720px) {
+  .disclaimer__title {
+    font-size: 30px;
+  }
+  .disclaimer__subtitle {
+    font-size: 13px;
+  }
+}
+@media (max-width: 550px) {
+  .disclaimer {
+    padding-top: 37px;
+  }
+  .disclaimer__subtitle {
+    padding-top: 8px;
+    padding-bottom: 54px;
+    font-size: 11px;
   }
 }/*# sourceMappingURL=style.css.map */

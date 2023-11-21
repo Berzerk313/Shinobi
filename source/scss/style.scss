@@ -5276,7 +5276,6 @@ body {
         }
         &-content{
             grid-template-columns: repeat(1, minmax(370px, 547px));
-            gap:30px;
             &__button{
                 display: none;
             }
@@ -5286,13 +5285,16 @@ body {
 
 @media (max-width: 420px) {
     .candlestorm{
+        
         &__title{
             font-size: 30px;
         }
         &-content{
+            gap:15px;
+            padding-top: 36px;
+            padding-bottom: 63px;
             grid-template-columns: repeat(1, minmax(370px, 547px));
             &__item {
-                gap:10px;
                 height: 175.868px;
                 border-radius: 20px;
                 &-icon {
@@ -5315,6 +5317,9 @@ body {
                 display: none;
             }
         }
+        &__arrow-block{
+            padding-top: 0;
+        }
     }
 }
 
@@ -5325,6 +5330,75 @@ body {
         }
         &-content{
             grid-template-columns: repeat(1, minmax(280px, 547px));
+        }
+    }
+}
+
+//////////////////////////
+//////////////////////////
+//////////////////////////
+
+.disclaimer {
+    padding-top: 65px;
+    text-align: center;
+    &__title {
+        color: #B20000;
+        font-family: 'Raleway';
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        text-transform: uppercase;
+    }
+    &-subtitle-block{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__subtitle {
+        max-width: 1047px;;
+        padding-top: 21px;
+        padding-bottom: 57px;
+        color: #FFF;
+        text-align: center;
+        font-family: 'Raleway';
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+}
+
+@media (max-width: 1250px) {
+    .disclaimer {
+        &__title {
+            font-size: 35px;
+        }
+        &__subtitle {
+            font-size: 15px;
+        }
+    }
+}
+
+@media (max-width: 720px) {
+    .disclaimer {
+        &__title {
+            font-size: 30px;
+        }
+        &__subtitle {
+            font-size: 13px;
+        }
+    }
+}
+
+
+@media (max-width: 550px) {
+    .disclaimer {
+        padding-top: 37px;
+        &__subtitle {
+            padding-top: 8px;
+            padding-bottom: 54px;
+            font-size: 11px;
         }
     }
 }
