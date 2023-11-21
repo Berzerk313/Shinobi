@@ -4941,4 +4941,203 @@ body {
     }
 }
 
+//////////////////////////////
+//////////////////////////////
+//////////////////////////////
+
+.video{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    &__title {
+        padding-top: 86px;
+        color: #FFF;
+        font-family: 'Orbitron', sans-serif;
+        font-size: 75px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    &__subtitle {
+        padding-top: 23px;
+        padding-bottom: 81px;;
+        color: #FFF;
+        font-family: 'Raleway';
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 155.4%; /* 40.404px */
+        text-align: center;
+    }
+    &__block {
+        width: 1160px;
+        height: 491px;
+        border-radius: 20px;
+        border: 1px solid #FFF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // position: relative;
+        // &-circle {
+        //     width: 100px;
+        //     height: 100px;
+        //     border-radius: 50%;
+        //     background-color: #FFF;
+        //     z-index: 3;
+        //     cursor: pointer;
+        //     // position: absolute;
+        //     // top: 0;
+        //     // left: 0;
+        // }
+        // &-circle:hover{
+        //     display: none;
+        // }
+    }
+    
+    &__video {
+        // display: none;
+        width: 1140px;
+        height: 471px;
+        z-index: 2;
+    }
+    &__arrow-block{
+        padding-top: 232px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .arrow-bottom {
+    }
+}
+
+@media (max-width: 1250px) {
+    .video{
+        &__block{
+            width: 860px;
+            height: 491px;
+        }
+        &__video{
+            width: 840px;
+            height: 471px;
+        }
+    }
+}
+
+@media (max-width: 950px) {
+    .video{
+        &__title{
+            font-size: 50px;
+        }
+        &__subtitle{
+            font-size: 20px;
+        }
+        &__block{
+            width: 660px;
+            height: 391px;
+        }
+        &__video{
+            width: 640px;
+            height: 371px;
+        }
+    }
+}
+
+@media (max-width: 740px) {
+    .video{
+        &__title{
+            font-size: 40px;
+        }
+        &__subtitle{
+            font-size: 16px;
+        }
+        &__block{
+            width: 560px;
+            height: 391px;
+        }
+        &__video{
+            width: 540px;
+            height: 371px;
+        }
+    }
+}
+
+@media (max-width: 630px) {
+    .video{
+        &__title{
+            font-size: 35px;
+        }
+        &__subtitle{
+            font-size: 14px;
+        }
+        &__block{
+            width: 460px;
+            height: 291px;
+        }
+        &__video{
+            width: 440px;
+            height: 271px;
+        }
+    }
+}
+
+@media (max-width: 550px) {
+    .video{
+        .container{
+            padding: 0;
+        }
+        &__title{
+            padding-top: 46px;
+            font-size: 30px;
+        }
+        &__subtitle{
+            padding-top: 5px;
+            padding-bottom: 38px;
+            font-size: 13px;
+        }
+        &__block{
+            width: 420px;
+            height: 227px;
+        }
+        &__video{
+            width: 415px;
+            height: 197px;
+        }
+        &__arrow-block{
+            padding: 89px 0 0 0;
+        }
+    }
+}
+
+@media (max-width: 419px) {
+    .video{
+        &__title{
+            padding-top: 46px;
+            font-size: 30px;
+        }
+        &__subtitle{
+            padding-top: 5px;
+            padding-bottom: 38px;
+            font-size: 13px;
+        }
+        &__block{
+            width: 320px;
+            height: 227px;
+        }
+        &__video{
+            width: 315px;
+            height: 197px;
+        }
+        &__arrow-block{
+            padding: 89px 0 0 0;
+        }
+    }
+}
+
+
+
 
