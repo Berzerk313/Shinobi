@@ -94,42 +94,40 @@ document.addEventListener('DOMContentLoaded', function () {
     loop: true,
     centeredSlides: 'true',
     centerSlides: 'true',
+    spaceBetween: 20,
     breakpoints: {
       1920: {
         slidesPerView: 2.333,
-        spaceBetween: 0,
-      },
-      1440: {
-        slidesPerView: 2.333,
-        spaceBetween: 0,
       },
       1100: {
         slidesPerView: 2.1,
-        spaceBetween: 0,
-      },
-      880: {
-        slidesPerView: 2.1,
-        spaceBetween: 0,
-      },
-      800: {
-        slidesPerView: 2.1,
-        spaceBetween: 0,
-      },
-      768: {
-        slidesPerView: 2.1,
-        spaceBetween: 0,
-      },
-      650: {
-        slidesPerView: 2.1,
-        spaceBetween: 0,
-      },
-      320: {
-        slidesPerView: 2.1,
-        spaceBetween: 0,
+        
       },
     },
   });
+  swiper.on('slideChange', function () {
+    resetScale(); 
+  });
+  
+  function resetScale() {
+        
+    swiper.slides.forEach(function (slide) {
+      slide.style.transform = '';
+    });
+  
+  
+    var activeSlide = swiper.slides[swiper.activeIndex];
+    if (activeSlide) {
+      activeSlide.style.transform = 'scale(1.2)';  
+      activeSlide.style.paddingRight = '80px'; 
+      activeSlide.style.paddingLeft = '80px'; 
+    }
+  }
 });
+
+
+
+
 
 ///////////////////////////////
 
