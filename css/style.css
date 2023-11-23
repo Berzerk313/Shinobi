@@ -3280,21 +3280,18 @@ body {
   text-align: center;
 }
 .back-test-swiper {
-  padding: 100px 0;
+  height: 445px;
+}
+.back-test-swiper-wrapper {
+  height: 445px;
 }
 .back-test .swiper-slide-active {
-  transform: scale(1.3);
-}
-.back-test .swiper-slide-active .back-test-slide {
-  transition: all 0.5s ease;
   transform: scale(1.3);
 }
 .back-test .swiper-slide-active .back-test__img {
   transform: scale(1.3);
 }
 .back-test-slide {
-  width: auto;
-  max-height: 500px;
   transition: all 0.5s ease;
 }
 .back-test__img {
@@ -3422,7 +3419,8 @@ body {
   font-size: 45px;
   font-style: normal;
   font-weight: 600;
-  line-height: 155.4%; /* 69.93px */
+  line-height: 155.4%;
+  /* 69.93px */
 }
 .price-rate-content__rows {
   display: flex;
@@ -3435,7 +3433,8 @@ body {
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
-  line-height: 116.4%; /* 23.28px */
+  line-height: 116.4%;
+  /* 23.28px */
   position: relative;
   padding-left: 56px;
   max-width: 550px;
@@ -3477,7 +3476,8 @@ body {
   font-size: 35px;
   font-style: normal;
   font-weight: 600;
-  line-height: 155.4%; /* 54.39px */
+  line-height: 155.4%;
+  /* 54.39px */
   position: relative;
 }
 .price-rate-content__dollars-first::before {
@@ -3496,7 +3496,8 @@ body {
   font-size: 45px;
   font-style: normal;
   font-weight: 600;
-  line-height: 155.4%; /* 69.93px */
+  line-height: 155.4%;
+  /* 69.93px */
 }
 .price-rate-content__text {
   padding-top: 12px;
@@ -3507,7 +3508,8 @@ body {
   font-size: 20px;
   font-style: italic;
   font-weight: 500;
-  line-height: 155.4%; /* 31.08px */
+  line-height: 155.4%;
+  /* 31.08px */
 }
 
 .price__buttons {
@@ -3703,7 +3705,8 @@ body {
   font-size: 26px;
   font-style: normal;
   font-weight: 500;
-  line-height: 155.4%; /* 40.404px */
+  line-height: 155.4%;
+  /* 40.404px */
   text-align: center;
 }
 .video__block {
@@ -3809,6 +3812,23 @@ body {
     padding: 89px 0 0 0;
   }
 }
+@media (max-width: 420px) {
+  .video .container {
+    width: 100%;
+    margin: 0;
+  }
+  .video__block {
+    width: 100%;
+    height: 227px;
+    border-left: none;
+    border-right: none;
+    border-radius: 0px;
+  }
+  .video__video {
+    width: 100%;
+    height: 197px;
+  }
+}
 @media (max-width: 419px) {
   .video__title {
     padding-top: 46px;
@@ -3820,11 +3840,9 @@ body {
     font-size: 13px;
   }
   .video__block {
-    width: 320px;
     height: 227px;
   }
   .video__video {
-    width: 315px;
     height: 197px;
   }
   .video__arrow-block {

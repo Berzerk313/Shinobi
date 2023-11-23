@@ -97,37 +97,68 @@ document.addEventListener('DOMContentLoaded', function () {
     breakpoints: {
       1920: {
         slidesPerView: 2.333,
-        spaceBetween: 200,
+        spaceBetween: 0,
       },
       1440: {
         slidesPerView: 2.333,
-        spaceBetween: 200,
+        spaceBetween: 0,
       },
       1100: {
         slidesPerView: 2.1,
-        spaceBetween: 250,
+        spaceBetween: 0,
       },
       880: {
         slidesPerView: 2.1,
-        spaceBetween: 300,
+        spaceBetween: 0,
       },
       800: {
         slidesPerView: 2.1,
-        spaceBetween: 350,
+        spaceBetween: 0,
       },
       768: {
         slidesPerView: 2.1,
-        spaceBetween: 250,
+        spaceBetween: 0,
       },
       650: {
         slidesPerView: 2.1,
-        spaceBetween: 250,
+        spaceBetween: 0,
       },
       320: {
         slidesPerView: 2.1,
-        spaceBetween: 250,
+        spaceBetween: 0,
       },
     },
   });
 });
+
+///////////////////////////////
+
+// $(document).ready(function(){
+//   $('.back-test-swiper2').slick({
+//     centerMode: true,
+//     centerPadding: '60px',
+//     slidesToShow: 3,
+//     responsive: [
+//       {
+//         breakpoint: 768,
+//         settings: {
+//           arrows: false,
+//           centerMode: true,
+//           centerPadding: '40px',
+//           slidesToShow: 3
+//         }
+//       },
+//       {
+//         breakpoint: 480,
+//         settings: {
+//           arrows: false,
+//           centerMode: true,
+//           centerPadding: '40px',
+//           slidesToShow: 1
+//         }
+//       }
+//     ]
+//   });
+// });
+
 
