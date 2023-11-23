@@ -94,7 +94,8 @@ document.addEventListener('DOMContentLoaded', function () {
     loop: true,
     centeredSlides: 'true',
     centerSlides: 'true',
-    spaceBetween: 20,
+    spaceBetween: 160,
+    updateOnWindowResize: true,
     breakpoints: {
       1920: {
         slidesPerView: 2.333,
@@ -111,16 +112,16 @@ document.addEventListener('DOMContentLoaded', function () {
   
   function resetScale() {
         
-    swiper.slides.forEach(function (slide) {
-      slide.style.transform = '';
-    });
+    // swiper.slides.forEach(function (slide) {
+    //   slide.style.transform = '';
+    // });
   
   
     var activeSlide = swiper.slides[swiper.activeIndex];
     if (activeSlide) {
-      activeSlide.style.transform = 'scale(1.2)';  
-      activeSlide.style.paddingRight = '80px'; 
-      activeSlide.style.paddingLeft = '80px'; 
+      // activeSlide.style.transform = 'scale(1.2)';  
+      // activeSlide.style.paddingRight = '80px'; 
+      // activeSlide.style.paddingLeft = '80px'; 
     }
   }
 });
