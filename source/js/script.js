@@ -99,65 +99,23 @@ document.addEventListener('DOMContentLoaded', function () {
     breakpoints: {
       1920: {
         slidesPerView: 2.333,
+        // slidesPerView: "auto",
       },
       1100: {
+        slidesPerView: 2.2,
+        
+      },
+      600: {
+        slidesPerView: 1.5,
+        spaceBetween: 100,
+        
+      },
+      320: {
         slidesPerView: 2.1,
         
       },
     },
   });
-  swiper.on('slideChange', function () {
-    resetScale(); 
-  });
-  
-  function resetScale() {
-        
-    // swiper.slides.forEach(function (slide) {
-    //   slide.style.transform = '';
-    // });
-  
-  
-    var activeSlide = swiper.slides[swiper.activeIndex];
-    if (activeSlide) {
-      // activeSlide.style.transform = 'scale(1.2)';  
-      // activeSlide.style.paddingRight = '80px'; 
-      // activeSlide.style.paddingLeft = '80px'; 
-    }
-  }
 });
-
-
-
-
-
-///////////////////////////////
-
-// $(document).ready(function(){
-//   $('.back-test-swiper2').slick({
-//     centerMode: true,
-//     centerPadding: '60px',
-//     slidesToShow: 3,
-//     responsive: [
-//       {
-//         breakpoint: 768,
-//         settings: {
-//           arrows: false,
-//           centerMode: true,
-//           centerPadding: '40px',
-//           slidesToShow: 3
-//         }
-//       },
-//       {
-//         breakpoint: 480,
-//         settings: {
-//           arrows: false,
-//           centerMode: true,
-//           centerPadding: '40px',
-//           slidesToShow: 1
-//         }
-//       }
-//     ]
-//   });
-// });
 
 
