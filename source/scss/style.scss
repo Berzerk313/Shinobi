@@ -4462,7 +4462,7 @@ body {
 
     &__title {
         padding-top: 200px;
-        padding-bottom: 142px;
+        padding-bottom: 122px;
         color: #FFF;
         font-family: 'Orbitron', sans-serif;
         font-size: 75px;
@@ -4475,11 +4475,12 @@ body {
 
     &-swiper {
         overflow: visible !important;
+        padding-top: -10px;
         // padding: 100px 0;
         // width: 100%;
         // height: auto;
         // height: 445px;
-        
+
     }
 
     &-swiper-wrapper {
@@ -4487,34 +4488,37 @@ body {
         // height: 445px;
         // overflow: visible;
     }
+
     .swiper-slide-active {
         z-index: 5;
         // padding: 0 0px;
-    
+
         // transform: scale(1.3);
         // width: 841px;
         // height: 443px;
         // transition: all 0.5s ease;
         .back-test-slide {
-           
+
             // transition: all 0.5s ease;
             // transform: scale(1.3);
-              
+
         }
-    
+
         .back-test__img {
-            transform: scale(1.3);
-           
+            transform: scale(1.15);
+
             // width: 841px;
             // height: 443px; 
             // width: 100%;
             // height: 100%;
-            
+
         }
     }
-   
+
 
     &-slide {
+        padding-top: 10px;
+        width: 100%;
         // transform: scale(1);
         // width: auto;
         // max-height: 500px;
@@ -4523,16 +4527,17 @@ body {
     }
 
     &__img {
-        // width: 694px;
+        width: 694px;
         // height: 363px;
         width: 100%;
+        height: 363px;
         // height: 100%;
-        object-fit: cover;
+        // object-fit: cover;
     }
 
 
     &__arrow-bottom {
-        padding-top: 39px;
+        padding-top: 89px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -4552,57 +4557,126 @@ body {
 //     }
 // }
 
-// @media (max-width: 1350px) {
-//     .back-test {
-//         &__img {
-//             width: 494px;
-//             height: 263px;
-//         }
-//     }
-// }
+@media (max-width: 1350px) {
+    .back-test {
+        &__img {
+            width: 504px;
+            height: 263px;
+        }
+    }
+}
 
-// @media (max-width: 1100px) {
-//     .back-test {
-//         &__title {
-//             font-size: 50px;
-//         }
-//     }
-// }
+@media (max-width: 1100px) {
+    .back-test {
+        &__title {
+            font-size: 50px;
+        }
 
-// @media (max-width: 800px) {
-//     .back-test {
-//         &__title {
-//             font-size: 40px;
-//         }
+        &__img {
+            width: 494px;
+            height: 253px;
+        }
+    }
+}
 
-//         &__img {
-//             width: 394px;
-//             height: 213px;
-//         }
-//     }
-// }
 
-// @media (max-width: 650px) {
-//     .back-test {
-//         &__title {
-//             font-size: 30px;
-//         }
+@media (max-width: 1000px) {
+    .back-test {
+        &__img {
+            padding: 0 40px 0 10px;
+        }
+    }
+}
 
-//         &__img {
-//             width: 269px;
-//             height: 141px;
-//         }
-//     }
-// }
+@media (max-width: 900px) {
+    .back-test {
+        &__title {
+            font-size: 40px;
+        }
 
-// @media (max-width: 420px) {
-//     .back-test {
-//         &__title {
-//             padding-top: 250px;
-//             font-size: 30px;
-//         }
-//     }
-// }
+        &__img {
+
+            width: 494px;
+            height: 213px;
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .back-test {
+        &__img {
+            padding: 0 100px 0 0px;
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .back-test {
+        &__img {
+            padding: 0 150px 0 0px;
+        }
+    }
+}
+
+@media (max-width: 650px) {
+    .back-test {
+        &__title {
+            font-size: 30px;
+        }
+
+        &__img {
+            width: 269px;
+            height: 141px;
+            padding: 0;
+        }
+    }
+}
+
+@media (max-width: 470px) {
+    .back-test {
+        &__img {
+            padding: 0 20px;
+        }
+    }
+}
+
+@media (max-width: 420px) {
+    .back-test {
+        &__title {
+            padding-top: 246px;
+            padding-bottom: 100px;
+            font-size: 30px;
+        }
+        &__img {
+            padding: 0 80px 0 0;
+        }
+
+        .swiper-slide-active {
+            .back-test__img {
+                width: 327px;
+                height: 171px;
+                margin-left: -20px;
+                margin-top: -10px;
+            }
+        }
+    }
+}
+
+@media (max-width: 390px) {
+    .back-test {
+        &__img {
+            padding: 0 100px 0 0;
+        }
+    }
+}
+
+@media (max-width: 360px) {
+    .back-test {
+        &__img {
+            padding: 0 110px 0 0;
+        }
+    }
+}
 
 /////////////////////////////
 /////////////////////////////
@@ -4610,7 +4684,7 @@ body {
 
 .price {
     &__title {
-        padding-top: 225px;
+        padding-top: 285px;
         color: #FFF;
         font-family: 'Orbitron', sans-serif;
         font-size: 75px;
@@ -4629,7 +4703,7 @@ body {
     &-subtitle-block {
         display: flex;
         justify-content: center;
-        padding-top: 27px;
+        padding-top: 33px;
     }
 
     &__subtitle {
@@ -4681,7 +4755,7 @@ body {
             flex-direction: column;
 
             &__title {
-                padding-top: 68px;
+                padding-top: 67px;
                 padding-bottom: 19px;
                 color: #EBFC56;
                 text-align: center;
@@ -4779,7 +4853,7 @@ body {
             }
 
             &__text {
-                padding-top: 12px;
+                padding-top: 14px;
                 padding-bottom: 56px;
                 color: #BABABA;
                 text-align: center;
@@ -4922,9 +4996,12 @@ body {
 @media (max-width: 550px) {
     .price {
         &__title {
+            padding-top: 64px;
             font-size: 30px;
         }
-
+        &-subtitle-block{
+            padding-top: 10px;
+        }
         &__subtitle {
             font-size: 13px;
         }
@@ -4935,7 +5012,9 @@ body {
             border-radius: 15px;
             border: 0.75px solid #EBFC56;
         }
-
+        &-rate-block{
+            padding-top: 44px;
+        }
         &-rate {
             margin: 12px 8px;
             max-width: 284px;
@@ -4958,7 +5037,7 @@ body {
                     font-size: 11px;
                     font-weight: 500;
                     padding-left: 28px;
-                    max-width: 550px;
+                    max-width: 265px;
                 }
 
                 &__row::before {
@@ -4969,7 +5048,7 @@ body {
                 }
 
                 &-discount-block {
-                    margin-top: 16px;
+                    margin-top: 30px;
                     width: 284px;
                     height: 32px;
                 }
@@ -5026,7 +5105,7 @@ body {
     gap: 10px;
 
     &__title {
-        padding-top: 86px;
+        padding-top: 56px;
         color: #FFF;
         font-family: 'Orbitron', sans-serif;
         font-size: 75px;
@@ -5181,7 +5260,7 @@ body {
         }
 
         &__title {
-            padding-top: 46px;
+            padding-top: 48px;
             font-size: 30px;
         }
 
@@ -5209,10 +5288,11 @@ body {
 
 @media (max-width: 420px) {
     .video {
-        .container{
+        .container {
             width: 100%;
             margin: 0;
         }
+
         &__block {
             width: 100%;
             height: 227px;
@@ -5261,7 +5341,7 @@ body {
 
 .candlestorm {
     &__title {
-        padding-top: 76px;
+        padding-top: 18px;
         color: #FFF;
         font-family: 'Orbitron', sans-serif;
         font-size: 59px;
@@ -5338,14 +5418,11 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
+        .arrow-bottom{
+            margin-bottom: 62px;
+        }
     }
 }
-
-.register-button {}
-
-.register-button-text {}
-
-.arrow-bottom {}
 
 @media (max-width: 1250px) {
     .candlestorm {
@@ -5419,6 +5496,7 @@ body {
 
         &__title {
             font-size: 30px;
+            padding-top: 40px;
         }
 
         &-content {
@@ -5428,12 +5506,12 @@ body {
             grid-template-columns: repeat(1, minmax(370px, 547px));
 
             &__item {
-                height: 175.868px;
+                height: 161px;
                 border-radius: 20px;
 
                 &-icon {
-                    width: 100px;
-                    height: 100px;
+                    width: 82.5px;
+                    height: 82.5px;
                 }
 
                 &-text {
@@ -5478,7 +5556,7 @@ body {
 //////////////////////////
 
 .disclaimer {
-    padding-top: 65px;
+    padding-top: 0px;
     text-align: center;
 
     &__title {
@@ -5545,6 +5623,7 @@ body {
             padding-top: 8px;
             padding-bottom: 54px;
             font-size: 11px;
+            width: 310px;
         }
     }
 }
@@ -5567,12 +5646,14 @@ body {
         display: flex;
         flex-direction: column;
         gap: 21px;
-        padding-right: 125px;
+        padding-right: 105px;
+        padding-left: 20px;
 
         &-info {
             display: flex;
             flex-direction: column;
             gap: 13px;
+           
 
             &__text {
                 color: #C3C3C3;
@@ -5646,7 +5727,7 @@ body {
     }
 
     &-other-columns:last-child {
-        padding-right: 0;
+        padding-right: 0px;
     }
 
     &-mobile {
@@ -5706,6 +5787,7 @@ body {
 
 @media (max-width: 900px) {
     .footer {
+        padding-left: 30px;
         &-desctop {
             display: none;
         }
@@ -5733,7 +5815,7 @@ body {
 
                 &__trigger {
                     display: block;
-                    padding-bottom: 30px;
+                    padding-bottom: 14px;
                 }
 
                 &__content {
@@ -5779,6 +5861,7 @@ body {
             flex-direction: column;
             gap: 21px;
             padding-right: 125px;
+            padding-top: 10px;
 
             &-info {
                 display: flex;
@@ -5798,7 +5881,7 @@ body {
             &-social {
                 display: grid;
                 grid-template-columns: repeat(2, 80px);
-                gap: 15px 36px;
+                gap: 15px 56px;
                 justify-content: left;
                 align-items: center;
                 margin-bottom: 71px;

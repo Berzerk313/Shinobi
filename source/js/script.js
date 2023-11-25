@@ -94,24 +94,32 @@ document.addEventListener('DOMContentLoaded', function () {
     loop: true,
     centeredSlides: 'true',
     centerSlides: 'true',
-    spaceBetween: 160,
+    spaceBetween: 130,
     updateOnWindowResize: true,
     breakpoints: {
       1920: {
         slidesPerView: 2.333,
-        // slidesPerView: "auto",
       },
-      1100: {
+      1400: {
+        slidesPerView: 2.3,        
+      }, 
+      1200: {
         slidesPerView: 2.2,
-        
-      },
+      }, 
+      1000: {
+        slidesPerView: 2,
+      },   
       600: {
-        slidesPerView: 1.5,
+        slidesPerView: 1.8,
         spaceBetween: 100,
-        
+      },
+      500: {
+        slidesPerView: 1.8,
+        spaceBetween: 100,
       },
       320: {
-        slidesPerView: 2.1,
+        slidesPerView: 1.8,
+        spaceBetween: 70,
         
       },
     },
