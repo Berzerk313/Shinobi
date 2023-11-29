@@ -126,4 +126,25 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
+//////////////////////////////////////
+
+
+/*  obeserver js  */
+const options = {
+  // root: document.querySelector("#scrollArea"),
+  // rootMargin: "0px",
+  threshold: 0.5,
+};
+const callback = function (entries, observer) {
+  console.debug('here');
+  // entries.forEach(entry => {
+  //   if(entry.isIntersecting) {
+  //     console.debug(entry.target);
+  //   }
+  // });
+};
+const observer = new IntersectionObserver(callback, options);
+
+const target = document.querySelector("#video");
+observer.observe(target);
 
