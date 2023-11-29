@@ -1657,7 +1657,7 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 95px 0 0 16px;
+        padding: 65px 0 0 16px;
         height: 37px;
 
         .arrow-bottom {
@@ -1766,9 +1766,10 @@ body {
 }
 
 // .shinobi-text-first{
-//     transform: rotate(-3.867deg);
+//     transform: rotate(-3.867deg) translateY(-35px);
 //     text-wrap: nowrap;
 //     z-index: 100;
+//     overflow: hidden;
 //     h2{
 //         font-family: 'Orbitron', sans-serif;
 //         font-size: 100px;
