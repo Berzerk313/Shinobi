@@ -4260,21 +4260,22 @@ body {
     padding-top: 21px;
   }
   .footer .accordion-item {
-    position: relative;
     margin-bottom: 20px;
   }
-  .footer .accordion-item__input {
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
+  .footer .accordion-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
   }
-  .footer .accordion-item__trigger {
-    display: block;
-    padding-bottom: 14px;
-  }
-  .footer .accordion-item__content {
-    display: none;
+  .footer .accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 20px;
   }
   .footer .accordion__title {
     color: #FFF;
@@ -4295,12 +4296,11 @@ body {
   .footer .accordion__text span {
     color: #EBFC56;
   }
-  .footer .accordion-item__input:checked ~ .accordion-item__content {
-    display: block;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding-left: 20px;
+  .footer .accordion__img {
+    transition: transform 0.3s ease;
+  }
+  .footer .accordion .accordion__arrow_rotate {
+    transform: rotate(180deg);
   }
   .footer .footer-mobile-column {
     display: flex;

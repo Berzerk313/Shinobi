@@ -148,3 +148,40 @@ document.addEventListener('DOMContentLoaded', function () {
 // const target = document.querySelector("#video");
 // observer.observe(target);
 
+/////////////////////////////////////
+
+
+let arrow = document.querySelectorAll('.accordion__img');
+document.querySelectorAll('.accordion-nav').forEach((el) => {
+  
+  el.addEventListener('click', () =>  {
+    let content = el.nextElementSibling;  
+    // arrow.classList.toggle('accordion__arrow_rotate')
+
+    if(content.style.maxHeight) {
+      document.querySelectorAll('.accordion-content').forEach((el) => el.style.maxHeight = null)
+      
+      
+    } else {
+      document.querySelectorAll('.accordion-content').forEach((el) => el.style.maxHeight = null)
+      content.style.maxHeight = content.scrollHeight + 'px'
+    }
+  })
+})
+
+// const arrow = document.querySelectorAll('.accordion__img');
+// const nav = document.querySelectorAll('.accordion-nav');
+// nav.addEventListener("click", function (e) {
+//   arrow.classList.toggle('accordion__arrow_rotate')
+// })
+
+// let arrow = document.querySelectorAll('.accordion__img');
+// document.querySelectorAll('.accordion-nav').forEach(navi => {
+//   navi.addEventListener("click", function (e) {
+//     arrow.classList.toggle('accordion__arrow_rotate')
+//   })
+// })
+
+
+
+
