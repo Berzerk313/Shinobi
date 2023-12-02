@@ -1918,6 +1918,7 @@ body {
   text-transform: uppercase;
   padding-top: 26px;
 }
+
 @media (max-width: 1220px) {
   .money-content__info {
     gap: 80px;
@@ -2904,7 +2905,6 @@ body {
   font-weight: 500;
   line-height: 155.4%;
   transition: all 0.5s ease;
-  /* 40.404px */
 }
 .result-bottom__circle-subtitle {
   color: #FFF;
@@ -2914,7 +2914,6 @@ body {
   font-style: normal;
   font-weight: 700;
   line-height: 155.4%;
-  /* 54.39px */
 }
 .result-bottom__circle:hover .result-bottom__circle-border {
   border: 2px solid #EBFC56;
@@ -2939,7 +2938,6 @@ body {
   font-style: normal;
   font-weight: 500;
   line-height: 155.4%;
-  /* 40.404px */
 }
 .result-bottom__text span {
   font-size: 30px;
@@ -3304,6 +3302,7 @@ body {
   justify-content: center;
   align-items: center;
 }
+
 @media (max-width: 1350px) {
   .back-test__img {
     width: 504px;
@@ -3462,7 +3461,6 @@ body {
   font-style: normal;
   font-weight: 600;
   line-height: 155.4%;
-  /* 69.93px */
 }
 .price-rate-content__rows {
   display: flex;
@@ -3476,7 +3474,6 @@ body {
   font-style: normal;
   font-weight: 500;
   line-height: 116.4%;
-  /* 23.28px */
   position: relative;
   padding-left: 56px;
   max-width: 550px;
@@ -3519,7 +3516,6 @@ body {
   font-style: normal;
   font-weight: 600;
   line-height: 155.4%;
-  /* 54.39px */
   position: relative;
 }
 .price-rate-content__dollars-first::before {
@@ -3539,7 +3535,6 @@ body {
   font-style: normal;
   font-weight: 600;
   line-height: 155.4%;
-  /* 69.93px */
 }
 .price-rate-content__text {
   padding-top: 14px;
@@ -3551,7 +3546,6 @@ body {
   font-style: italic;
   font-weight: 500;
   line-height: 155.4%;
-  /* 31.08px */
 }
 
 .price__buttons {
@@ -3755,7 +3749,6 @@ body {
   font-style: normal;
   font-weight: 500;
   line-height: 155.4%;
-  /* 40.404px */
   text-align: center;
 }
 .video__block {
@@ -3778,6 +3771,7 @@ body {
   justify-content: center;
   align-items: center;
 }
+
 @media (max-width: 1250px) {
   .video__block {
     width: 860px;
