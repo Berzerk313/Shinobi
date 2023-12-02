@@ -25,7 +25,7 @@ body {
 }
 
 .background-header {
-    background-color: rgba(12, 11, 14, 0.65);
+    background-color: rgba(12, 11, 14, 0.9);
     position: fixed;
     z-index: 5;
     width: 100%;
@@ -5833,8 +5833,9 @@ body {
 
             &-item {
                 margin-bottom: 20px;
+                cursor: pointer;
             }
-
+            
             &-nav {
                 display: flex;
                 justify-content: space-between;
@@ -5851,6 +5852,9 @@ body {
                 gap: 20px;
                 padding-left: 20px;
 
+            }
+            .accordion-item.active .accordion-content{
+                max-height: 300px;
             }
 
             &__title {
@@ -5877,72 +5881,10 @@ body {
             &__img{
                 transition: transform 0.3s ease;
             }
-            .accordion__arrow_rotate{
+            .accordion-item.active .accordion__img{
                 transform: rotate(180deg);
             }
         }
-
-        // .accordion {
-        //     padding-top: 21px;
-
-        //     &-item {
-        //         position: relative;
-        //         margin-bottom: 20px;
-
-        //         &__input {
-        //             position: absolute;
-        //             top: 0;
-        //             left: 0;
-        //             opacity: 0;
-        //         }
-
-        //         &__trigger {
-        //             display: block;
-        //             padding-bottom: 14px;
-        //         }
-        //         &__trigger-wrapper{
-        //             display: flex;
-        //             justify-content: space-between;
-        //             align-items: center;
-        //         }
-
-        //         &__content {
-        //             display: none;
-        //         }
-        //     }
-
-        //     &__title {
-        //         color: #FFF;
-        //         font-family: 'Raleway';
-        //         font-size: 18px;
-        //         font-style: normal;
-        //         font-weight: 600;
-        //         line-height: normal;
-        //     }
-
-        //     &__text {
-        //         color: #C3C3C3;
-        //         font-family: 'Raleway';
-        //         font-size: 16px;
-        //         font-style: normal;
-        //         font-weight: 500;
-        //         line-height: normal;
-
-        //         span {
-        //             color: #EBFC56;
-        //         }
-        //     }
-        // }
-
-        // .accordion-item__input:checked~.accordion-item__trigger {}
-
-        // .accordion-item__input:checked~.accordion-item__content {
-        //     display: block;
-        //     display: flex;
-        //     flex-direction: column;
-        //     gap: 20px;
-        //     padding-left: 20px;
-        // }
 
         .footer-mobile-column {
             display: flex;

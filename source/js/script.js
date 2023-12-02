@@ -21,20 +21,20 @@ if (mainBurger) {
 const tabsBtn = document.querySelectorAll(".how-content__tabs-nav-btn");
 const tabsItems = document.querySelectorAll(".how-content__tabs-content-item");
 
-tabsBtn.forEach(onTabClick); 
+tabsBtn.forEach(onTabClick);
 
 function onTabClick(item) {
-  item.addEventListener("click", function() {
+  item.addEventListener("click", function () {
     let currentBtn = item;
     let tabId = currentBtn.getAttribute("data-tab");
     let currentTab = document.querySelector(tabId);
 
-    if( ! currentBtn.classList.contains('active') ) {
-      tabsBtn.forEach(function(item) {
+    if (!currentBtn.classList.contains('active')) {
+      tabsBtn.forEach(function (item) {
         item.classList.remove('active');
       });
 
-      tabsItems.forEach(function(item) {
+      tabsItems.forEach(function (item) {
         item.classList.remove('active');
       });
 
@@ -60,7 +60,7 @@ document.querySelector('.how-content__tabs-nav-btn').click();
 // function repeatContent(el, till) {
 //     let html = el.innerHTML;
 //     let counter = 0; 
-    
+
 //     while (el.offsetWidth < till && counter < 100) {
 //         el.innerHTML += html;
 //         counter += 1;
@@ -80,7 +80,7 @@ document.querySelector('.how-content__tabs-nav-btn').click();
 // function repeatContent(el2, till) {
 //     let html = el2.innerHTML;
 //     let counter = 0; 
-    
+
 //     while (el.offsetWidth < till && counter < 100) {
 //         el.innerHTML += html;
 //         counter += 1;
@@ -101,18 +101,18 @@ document.addEventListener('DOMContentLoaded', function () {
         slidesPerView: 2.333,
       },
       1400: {
-        slidesPerView: 2.3,        
-      }, 
+        slidesPerView: 2.3,
+      },
       1200: {
         slidesPerView: 2.2,
-      }, 
+      },
       1000: {
         slidesPerView: 2,
       },
       651: {
         slidesPerView: 1.9,
         spaceBetween: 170,
-      },   
+      },
       600: {
         slidesPerView: 2.1,
         spaceBetween: 100,
@@ -170,22 +170,30 @@ document.addEventListener('DOMContentLoaded', function () {
 /////////////////////////////////////
 
 
-let arrow = document.querySelectorAll('.accordion__img');
-document.querySelectorAll('.accordion-nav').forEach((el) => {
-  
-  el.addEventListener('click', () =>  {
-    let content = el.nextElementSibling;  
-    // arrow.classList.toggle('accordion__arrow_rotate')
+// let arrow = document.querySelectorAll('.accordion__img');
+// document.querySelectorAll('.accordion-nav').forEach((el) => {
 
-    if(content.style.maxHeight) {
-      document.querySelectorAll('.accordion-content').forEach((el) => el.style.maxHeight = null)
-      
-    } else {
-      document.querySelectorAll('.accordion-content').forEach((el) => el.style.maxHeight = null)
-      content.style.maxHeight = content.scrollHeight + 'px'
-    }
-  })
-})
+//   el.addEventListener('click', () =>  {
+//     let content = el.nextElementSibling;  
+//     // arrow.classList.toggle('accordion__arrow_rotate')
+
+//     if(content.style.maxHeight) {
+//       document.querySelectorAll('.accordion-content').forEach((el) => el.style.maxHeight = null)
+
+//     } else {
+//       document.querySelectorAll('.accordion-content').forEach((el) => el.style.maxHeight = null)
+//       content.style.maxHeight = content.scrollHeight + 'px'
+//     }
+//   })
+// })
+
+const accordionItems = document.querySelectorAll('.accordion-item');
+
+accordionItems.forEach(accordionItem => {
+  accordionItem.addEventListener("click", () => {
+    accordionItem.classList.toggle("active");
+  });
+});
 
 // const arrow = document.querySelectorAll('.accordion__img');
 // const nav = document.querySelectorAll('.accordion-nav');
