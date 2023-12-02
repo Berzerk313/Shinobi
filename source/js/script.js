@@ -108,19 +108,38 @@ document.addEventListener('DOMContentLoaded', function () {
       }, 
       1000: {
         slidesPerView: 2,
+      },
+      651: {
+        slidesPerView: 1.9,
+        spaceBetween: 170,
       },   
       600: {
-        slidesPerView: 1.8,
+        slidesPerView: 2.1,
         spaceBetween: 100,
       },
       500: {
         slidesPerView: 1.8,
+        spaceBetween: 60,
+      },
+      480: {
+        slidesPerView: 1.8,
+        spaceBetween: 100,
+      },
+      450: {
+        slidesPerView: 1.6,
+        spaceBetween: 70,
+      },
+      420: {
+        slidesPerView: 1.55,
+        spaceBetween: 60,
+      },
+      360: {
+        slidesPerView: 2,
         spaceBetween: 100,
       },
       320: {
-        slidesPerView: 1.8,
-        spaceBetween: 70,
-        
+        slidesPerView: 1.75,
+        spaceBetween: 60,
       },
     },
   });
@@ -161,7 +180,6 @@ document.querySelectorAll('.accordion-nav').forEach((el) => {
     if(content.style.maxHeight) {
       document.querySelectorAll('.accordion-content').forEach((el) => el.style.maxHeight = null)
       
-      
     } else {
       document.querySelectorAll('.accordion-content').forEach((el) => el.style.maxHeight = null)
       content.style.maxHeight = content.scrollHeight + 'px'
@@ -181,7 +199,3 @@ document.querySelectorAll('.accordion-nav').forEach((el) => {
 //     arrow.classList.toggle('accordion__arrow_rotate')
 //   })
 // })
-
-
-
-
