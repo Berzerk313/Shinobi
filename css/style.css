@@ -4275,7 +4275,7 @@ body {
   .footer .accordion-content {
     max-height: 0;
     overflow: hidden;
-    transition: 0.3s ease-in-out;
+    transition: 0.5s ease-in-out;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -4283,6 +4283,7 @@ body {
   }
   .footer .accordion .accordion-item.active .accordion-content {
     max-height: 300px;
+    animation: fade 0.5s ease-in-out;
   }
   .footer .accordion__title {
     color: #FFF;
@@ -4304,10 +4305,20 @@ body {
     color: #EBFC56;
   }
   .footer .accordion__img {
-    transition: transform 0.3s ease;
+    transition: transform 0.5s ease;
   }
   .footer .accordion .accordion-item.active .accordion__img {
     transform: rotate(180deg);
+  }
+  @keyframes fade {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0px);
+    }
   }
   .footer .footer-mobile-column {
     display: flex;

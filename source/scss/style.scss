@@ -5846,7 +5846,7 @@ body {
             &-content {
                 max-height: 0;
                 overflow: hidden;
-                transition: 0.3s ease-in-out;
+                transition: 0.5s ease-in-out;
                 display: flex;
                 flex-direction: column;
                 gap: 20px;
@@ -5855,6 +5855,7 @@ body {
             }
             .accordion-item.active .accordion-content{
                 max-height: 300px;
+                animation: fade 0.5s ease-in-out;
             }
 
             &__title {
@@ -5879,10 +5880,21 @@ body {
                 }
             }
             &__img{
-                transition: transform 0.3s ease;
+                transition: transform 0.5s ease;
             }
             .accordion-item.active .accordion__img{
                 transform: rotate(180deg);
+            }
+
+            @keyframes fade {
+                from{
+                    opacity: 0;
+                    transform: translateY(-10px);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateY(0px);
+                }
             }
         }
 
