@@ -1243,6 +1243,7 @@ body {
   padding-top: 128px;
   height: auto;
   width: 100%;
+  position: relative;
 }
 .how-content__title {
   text-align: center;
@@ -1351,13 +1352,54 @@ body {
   opacity: 1;
   pointer-events: auto;
 }
-
-.shinobi-outer {
+.how-content-outer {
   overflow: hidden;
+  text-wrap: nowrap;
+  width: 99.5%;
+  height: 150px;
+  z-index: 5;
+  position: absolute;
+  bottom: -135px;
+  left: 0;
+  transform: rotate(-3.7deg);
+}
+.how-content-outer div {
+  animation: running-text-first 10s linear infinite;
   width: 100%;
-  pointer-events: none;
+}
+.how-content-text {
+  font-family: "Orbitron", sans-serif;
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+  color: rgba(136, 136, 136, 0.3215686275);
+  width: 100%;
+}
+@keyframes running-text-first {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
 
+@media (max-width: 1500px) {
+  .how-content-outer {
+    bottom: -145px;
+    transform: rotate(-4.6deg);
+  }
+}
+@media (max-width: 1260px) {
+  .background-black-clip-path {
+    height: 866px;
+  }
+  .how-content-outer {
+    bottom: -145px;
+  }
+}
 @media (max-width: 1250px) {
   .how-content__tabs {
     padding-left: 100px;
@@ -1388,6 +1430,9 @@ body {
   .how-content__tabs-content-item span {
     font-size: 18px;
   }
+  .how-content-outer {
+    bottom: -215px;
+  }
 }
 @media (max-width: 1240px) {
   .background-grey-clip-path {
@@ -1402,17 +1447,18 @@ body {
     padding-left: 50px;
   }
 }
+@media (max-width: 1056px) {
+  .how-content-outer {
+    bottom: -185px;
+    transform: rotate(-5deg);
+  }
+}
 @media (max-width: 1050px) {
   .how-content__tabs {
     padding-left: 0px;
   }
-}
-@media (max-width: 1000px) {
-  .background-grey-clip-path {
-    height: 2040px;
-  }
-  .how-content__tabs {
-    padding-left: 70px;
+  .how-content-outer {
+    bottom: -205px;
   }
 }
 @media (max-width: 1010px) {
@@ -1436,6 +1482,17 @@ body {
   }
   .how-content__tabs-content-item span {
     font-size: 15px;
+  }
+  .how-content-outer {
+    bottom: -255px;
+  }
+}
+@media (max-width: 1000px) {
+  .background-grey-clip-path {
+    height: 2040px;
+  }
+  .how-content__tabs {
+    padding-left: 70px;
   }
 }
 @media (max-width: 900px) {
@@ -1507,6 +1564,13 @@ body {
   .how-content__tabs-content-item span {
     font-size: 15px;
   }
+  .how-content-outer {
+    bottom: 420px;
+    transform: rotate(-4deg);
+  }
+  .how-content-text {
+    font-size: 75px;
+  }
 }
 @media (max-width: 890px) {
   .how-content__tabs-nav::before {
@@ -1541,6 +1605,13 @@ body {
 @media (max-width: 790px) {
   .how-content__tabs-nav::before {
     left: 225px;
+  }
+  .how-content-outer {
+    bottom: 390px;
+    transform: rotate(-5deg);
+  }
+  .how-content-text {
+    font-size: 50px;
   }
 }
 @media (max-width: 772px) {
@@ -1597,6 +1668,10 @@ body {
 @media (max-width: 690px) {
   .how-content__tabs-nav::before {
     left: 175px;
+  }
+  .how-content-outer {
+    bottom: 390px;
+    transform: rotate(-6deg);
   }
 }
 @media (max-width: 672px) {
@@ -1764,6 +1839,13 @@ body {
   .how-content__tabs-content {
     transform: translateY(-526px) translateX(120px);
   }
+  .how-content-outer {
+    bottom: 490px;
+    transform: rotate(-4.5deg);
+  }
+  .how-content-text {
+    font-size: 37.589px;
+  }
 }
 @media (max-width: 400px) {
   .how-content__title {
@@ -1787,6 +1869,12 @@ body {
     height: 19px;
     background: #FFF;
     transition: all 0.5s ease;
+  }
+}
+@media (max-width: 335px) {
+  .how-content-outer {
+    bottom: 520px;
+    transform: rotate(-6deg);
   }
 }
 .money-content {
@@ -2919,7 +3007,7 @@ body {
   width: 100%;
 }
 .result-bottom .result-outer div {
-  animation: running-text 10s linear infinite;
+  animation: running-text-second 10s linear infinite;
   width: 100%;
 }
 .result-bottom .result-text {
@@ -2932,7 +3020,7 @@ body {
   color: rgba(136, 136, 136, 0.3215686275);
   width: 100%;
 }
-@keyframes running-text {
+@keyframes running-text-second {
   0% {
     transform: translateX(100%);
   }
