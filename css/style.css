@@ -1607,6 +1607,7 @@ body {
     left: 225px;
   }
   .how-content-outer {
+    width: 99%;
     bottom: 390px;
     transform: rotate(-5deg);
   }
@@ -1732,6 +1733,11 @@ body {
   }
   .how-content__tabs-content {
     transform: translateY(-530px) translateX(200px);
+  }
+}
+@media (max-width: 580px) {
+  .how-content-outer {
+    width: 98.5%;
   }
 }
 @media (max-width: 570px) {
@@ -1873,6 +1879,7 @@ body {
 }
 @media (max-width: 335px) {
   .how-content-outer {
+    width: 97.5%;
     bottom: 520px;
     transform: rotate(-6deg);
   }

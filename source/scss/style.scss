@@ -2122,6 +2122,7 @@ body {
             }
         }
         &-outer {
+            width: 99%;
             bottom: 390px;
             transform: rotate(-5.0deg);
         }
@@ -2317,6 +2318,16 @@ body {
         }
     }
 }
+
+@media (max-width: 580px) {
+    .how-content {
+       &-outer{
+        width: 98.5%;
+       }
+    }
+}
+
+
 
 @media (max-width: 570px) {
     .how-content {
@@ -2528,6 +2539,7 @@ body {
 @media (max-width: 335px)  {
     .how-content{
         &-outer {
+            width: 97.5%;
             bottom: 520px;
             transform: rotate(-6.0deg);
         }
