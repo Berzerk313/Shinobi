@@ -46,47 +46,6 @@ function onTabClick(item) {
 
 document.querySelector('.how-content__tabs-nav-btn').click();
 
-// ////////////////////////////////
-
-// let outer = document.querySelector(".shinobi-outer");
-// let content = outer.querySelector('.shinobi-loop__content');
-
-
-// repeatContent(content, outer.offsetWidth);
-
-// let el = outer.querySelector('.shinobi-loop');
-// el.innerHTML = el.innerHTML + el.innerHTML;
-
-// function repeatContent(el, till) {
-//     let html = el.innerHTML;
-//     let counter = 0; 
-
-//     while (el.offsetWidth < till && counter < 100) {
-//         el.innerHTML += html;
-//         counter += 1;
-//     }
-// }
-
-// /////////////////////////////////
-
-// let outer2 = document.querySelector(".result-outer");
-// let content2 = outer2.querySelector('.result-loop__content');
-
-// repeatContent(content2, outer2.offsetWidth);
-
-// let el2 = outer2.querySelector('.result-loop');
-// el2.innerHTML = el2.innerHTML + el2.innerHTML;
-
-// function repeatContent(el2, till) {
-//     let html = el2.innerHTML;
-//     let counter = 0; 
-
-//     while (el.offsetWidth < till && counter < 100) {
-//         el.innerHTML += html;
-//         counter += 1;
-//     }
-// }
-
 /////////////////////////////////
 
 document.addEventListener('DOMContentLoaded', function () {
