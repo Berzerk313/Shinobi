@@ -148,24 +148,23 @@ document.addEventListener('DOMContentLoaded', function () {
 //////////////////////////////////////
 
 
-// /*  obeserver js  */
+/*  obeserver js  */
 // const options = {
-//   // root: document.querySelector("#scrollArea"),
-//   // rootMargin: "0px",
 //   threshold: 0.5,
 // };
 // const callback = function (entries, observer) {
-//   console.debug('here');
-//   // entries.forEach(entry => {
-//   //   if(entry.isIntersecting) {
-//   //     console.debug(entry.target);
-//   //   }
-//   // });
+//   entries.forEach(entry => {
+//     if(!entry.isIntersecting) {
+//       console.log("bye");
+//     } else {
+//       console.log("hello");
+//     }
+//   });
 // };
-// const observer = new IntersectionObserver(callback, options);
+// const observer = new IntersectionObserver(callback);
 
-// const target = document.querySelector("#video");
-// observer.observe(target);
+// const video = document.querySelector(".video");
+// observer.observe(video);
 
 /////////////////////////////////////
 
