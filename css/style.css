@@ -3272,6 +3272,7 @@ body {
   }
   .result-bottom {
     height: 323px;
+    padding-bottom: 100px;
   }
   .result-bottom__circle {
     top: -100px;
@@ -3306,6 +3307,9 @@ body {
   }
   .result-bottom__button {
     padding-top: 23px;
+  }
+  .result-bottom .result-outer {
+    display: none;
   }
 }
 @media (max-width: 420px) {
