@@ -1,9 +1,18 @@
 const mainBurger = document.querySelector('.burger');
-const mainPage = document.querySelector('.main-page')
+const mainPage = document.querySelector('.main-page');
+const burgerBackdrop = document.querySelector('.burger-backdrop')
+
 if (mainBurger) {
   const mainBurgerMenu = document.querySelector('.burger-menu');
   mainBurger.addEventListener("click", function (e) {
+    if(document.body.classList.contains('lock')){
+      document.body.style.width = "auto";
+    } else {
+      document.body.style.width = document.body.clientWidth + 'px';
+    }
     document.body.classList.toggle('lock');
+    
+    burgerBackdrop.classList.toggle('active')
     mainBurger.classList.toggle('active');
     mainBurgerMenu.classList.toggle('active');
   });

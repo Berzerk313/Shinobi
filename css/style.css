@@ -81,15 +81,6 @@ body {
   overflow-x: hidden;
 }
 
-.burger_background {
-  display: none;
-  width: 100%;
-  height: 100%;
-  background-color: #000;
-  opacity: 0.35;
-  z-index: 4;
-}
-
 .lock {
   overflow: hidden;
 }
@@ -168,6 +159,17 @@ body {
 @media (max-width: 900px) {
   .background-header {
     display: none;
+  }
+  .burger-backdrop {
+    display: none;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 9;
+    background-color: rgba(0, 0, 0, 0.35);
+  }
+  .burger-backdrop.active {
+    display: block;
   }
   .burger-wrapper {
     position: fixed;
@@ -376,6 +378,7 @@ body {
   width: 367px;
   height: 97px;
   border-radius: 30px;
+  border: none;
   background: #EAFC52;
   transition: all 0.3s ease;
 }
