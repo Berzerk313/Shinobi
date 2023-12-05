@@ -1554,7 +1554,7 @@ body {
     font-size: 15px;
   }
   .how-content-outer {
-    bottom: 420px;
+    bottom: 430px;
     transform: rotate(-4deg);
   }
   .how-content-text {
@@ -1597,7 +1597,7 @@ body {
   }
   .how-content-outer {
     width: 99%;
-    bottom: 390px;
+    bottom: 420px;
     transform: rotate(-5deg);
   }
   .how-content-text {
@@ -1660,7 +1660,7 @@ body {
     left: 175px;
   }
   .how-content-outer {
-    bottom: 390px;
+    bottom: 420px;
     transform: rotate(-6deg);
   }
 }
