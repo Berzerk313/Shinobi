@@ -81,6 +81,15 @@ body {
   overflow-x: hidden;
 }
 
+.burger_background {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.35;
+  z-index: 4;
+}
+
 .lock {
   overflow: hidden;
 }
@@ -171,10 +180,10 @@ body {
     padding: 30px 38px 0 38px;
     background-color: rgba(12, 11, 14, 0.65);
   }
-  .burger-wrapper a {
+  .burger-wrapper .burger-menu__list-item {
     position: relative;
   }
-  .burger-wrapper a:before {
+  .burger-wrapper .burger-menu__list-item:before {
     position: absolute;
     content: "";
     width: 100%;
@@ -203,20 +212,21 @@ body {
     margin-bottom: 20px;
     order: 2;
   }
-  .burger-wrapper .burger-span-top {
+  .burger-wrapper .burger-span {
     height: 3px;
     width: 26px;
     background: #EAFC52;
+    z-index: 13;
+    transition: all 0.3s ease-in-out;
   }
-  .burger-wrapper .burger-span-middle {
-    height: 3px;
-    width: 26px;
-    background: #EAFC52;
+  .burger-wrapper .burger.active .burger-span:nth-child(2) {
+    opacity: 0;
   }
-  .burger-wrapper .burger-span-bottom {
-    height: 3px;
-    width: 26px;
-    background: #EAFC52;
+  .burger-wrapper .burger.active .burger-span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .burger-wrapper .burger.active .burger-span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
   }
   .burger-wrapper .burger-menu {
     position: fixed;
@@ -232,14 +242,6 @@ body {
     display: flex;
     flex-direction: column;
     z-index: 12;
-  }
-  .burger-wrapper .burger-menu__close {
-    position: relative;
-  }
-  .burger-wrapper .burger-menu__close-img {
-    position: absolute;
-    top: 0;
-    right: 30px;
   }
   .burger-wrapper .burger-menu__list {
     padding: 110px 0 0 39px;

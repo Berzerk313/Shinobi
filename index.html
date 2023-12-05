@@ -20,14 +20,18 @@
 <body>
 
   <header>
-    <div class="background-header">
+    <!-- <div class="background-header">
       <div class="container">
         <nav>
           <div class="menu">
-            <img class="menu-logo" src="./img/header/logo.svg" alt="logo">
+            <picture>
+              <source srcset="./img/header/mobile/logo-mobile.svg">
+              <img class="menu-logo" src="./img/header/logo.svg" alt="logo">
+            </picture>
+            
             <a href="#" class="menu__link">
               <h2 class="menu__link-item">О проекте</h2>
-            </a>
+            </a>  
             <a href="#" class="menu__link">
               <h2 class="menu__link-item">О стратегии</h2>
             </a>
@@ -43,36 +47,65 @@
               </div>
             </a>
           </div>
+          <div class="burger">
+            <span class="burger-span"></span>
+            <span class="burger-span"></span>
+            <span class="burger-span"></span>
+          </div>
         </nav>
       </div>
-    </div>
+    </div> -->
 
-    <div class="burger-wrapper">
-      <div class="burger">
-        <span class="burger-span-top"></span>
-        <span class="burger-span-middle"></span>
-        <span class="burger-span-bottom"></span>
-      </div>
-      <div class="burger-logo">
-        <a href="#">
-          <img class="burger-logo-mobile" src="./img/header/mobile/logo-mobile.svg" alt="logo">
-        </a>
-      </div>
-      <div class="burger-menu">
-        <div class="burger-menu__close">
-          <img class="burger-menu__close-img" src="./img/header/mobile/close.svg" alt="close">
+      <div class="background-header">
+        <div class="container">
+          <nav>
+            <div class="menu">
+              <img class="menu-logo" src="./img/header/logo.svg" alt="logo">
+              <a href="#" class="menu__link">
+                <h2 class="menu__link-item">О проекте</h2>
+              </a>
+              <a href="#" class="menu__link">
+                <h2 class="menu__link-item">О стратегии</h2>
+              </a>
+              <a href="#" class="menu__link">
+                <h2 class="menu__link-item">Цены и условия</h2>
+              </a>
+              <a href="#" class="menu__link">
+                <h2 class="menu__link-item">Результаты</h2>
+              </a>
+              <a href="#" class="menu__link-personal">
+                <div class="menu__link-personal-account">
+                  <h2 class="menu__link-personal-account-item">Личный кабинет</h2>
+                </div>
+              </a>
+            </div>
+          </nav>
         </div>
-        <nav>
-          <ul class="burger-menu__list">
-            <li><a href="#" class="burger-menu__list-item">О проекте</a></li>
-            <li><a href="#" class="burger-menu__list-item">О стратегии</a></li>
-            <li><a href="#" class="burger-menu__list-item">Цены и условия</a></li>
-            <li><a href="#" class="burger-menu__list-item">Результаты</a></li>
-            <li><a href="#" class="burger-menu__list-item">Личный кабинет</a></li>
-          </ul>
-        </nav>
       </div>
-    </div>
+
+      <div class="burger-wrapper">
+        <div class="burger">
+          <span class="burger-span"></span>
+          <span class="burger-span"></span>
+          <span class="burger-span"></span>
+        </div>
+        <div class="burger-logo">
+          <a href="#">
+            <img class="burger-logo-mobile" src="./img/header/mobile/logo-mobile.svg" alt="logo">
+          </a>
+        </div>
+        <div class="burger-menu">
+          <nav>
+            <ul class="burger-menu__list">
+              <li><a href="#" class="burger-menu__list-item">О проекте</a></li>
+              <li><a href="#" class="burger-menu__list-item">О стратегии</a></li>
+              <li><a href="#" class="burger-menu__list-item">Цены и условия</a></li>
+              <li><a href="#" class="burger-menu__list-item">Результаты</a></li>
+              <li><a href="#" class="burger-menu__list-item">Личный кабинет</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
   </header>
 
   <main>
@@ -470,11 +503,11 @@
           </button>
         </div>
 
-          <div class="result-outer">
-            <div>
-              <h2 class="result-text">shinobi shinobi shinobi shinobi shinobi shinobi</h2>
-            </div>
+        <div class="result-outer">
+          <div>
+            <h2 class="result-text">shinobi shinobi shinobi shinobi shinobi shinobi</h2>
           </div>
+        </div>
 
       </div>
     </section>
