@@ -11,7 +11,6 @@ if (mainBurger) {
       document.body.style.width = document.body.clientWidth + 'px';
     }
     document.body.classList.toggle('lock');
-    
     burgerBackdrop.classList.toggle('active')
     mainBurger.classList.toggle('active');
     mainBurgerMenu.classList.toggle('active');
