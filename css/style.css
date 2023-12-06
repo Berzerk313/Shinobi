@@ -1265,7 +1265,7 @@ body {
   justify-content: space-between;
 }
 .how-content__tabs-nav-btn:nth-child(3) {
-  min-width: 320px;
+  min-width: 280px;
 }
 .how-content__tabs-nav-btn {
   color: rgba(255, 255, 255, 0.31);

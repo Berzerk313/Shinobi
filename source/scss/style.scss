@@ -1596,9 +1596,8 @@ body {
             // justify-content: center;
             justify-content: space-between;
 
-            &-btn:nth-child(3)
-            {
-                min-width: 320px;
+            &-btn:nth-child(3) {
+                min-width: 280px;
             }
 
             &-btn {
@@ -1635,7 +1634,7 @@ body {
             }
         }
 
-        
+
 
         &-content {
             padding: 0px 0 0 0px;
@@ -1650,8 +1649,8 @@ body {
             justify-content: space-between;
             align-items: center;
 
-            // &-item:nth-child(1) {
-            //     padding-left: 60px;
+            // &-item:nth-child(4) {
+            //     padding-left: 20px;
             // }
 
             &-item {
@@ -1767,13 +1766,15 @@ body {
         &__tabs {
             &-nav {
 
-                &-btn:nth-child(3){
+                &-btn:nth-child(3) {
                     min-width: 236px;
                 }
+
                 &-btn {
                     font-size: 60px;
                     min-width: 150px;
                 }
+
                 .active::before {
                     width: 25px;
                     height: 25px;
@@ -1787,7 +1788,7 @@ body {
             }
 
             &-content {
-                
+
 
                 &-item:nth-child(1) {
                     padding-right: 0px;
@@ -1854,8 +1855,7 @@ body {
 
         &__tabs {
             &-nav {
-                &-btn:nth-child(3)
-                {
+                &-btn:nth-child(3) {
                     min-width: 197px;
                 }
 
@@ -1939,11 +1939,10 @@ body {
                 width: 200px;
                 margin: 0 0;
 
-                &-btn:nth-child(3)
-                {
+                &-btn:nth-child(3) {
                     min-width: 50px;
                 }
-               
+
 
                 &-btn {
                     font-size: 60px;
@@ -1973,12 +1972,12 @@ body {
                 justify-content: center;
                 align-items: center;
                 margin: 0 0;
-                
+
                 gap: 30px;
                 padding-left: 0px;
                 margin-right: 0px;
                 height: 564px;
-                max-width:200px;
+                max-width: 200px;
                 transform: translateY(-560px) translateX(200px);
 
                 &-item {
@@ -2045,11 +2044,11 @@ body {
     }
 }
 
-@media (max-width: 700px){
-    .how-content{
-        &__tabs{
+@media (max-width: 700px) {
+    .how-content {
+        &__tabs {
             padding: 250px 0 0 350px;
-            
+
             &-nav::before {
                 content: '';
                 position: absolute;
@@ -2059,8 +2058,8 @@ body {
                 left: 125px;
                 transform: rotate(-90deg);
             }
-            
-            &-content{
+
+            &-content {
                 width: 320px;
             }
         }
@@ -2140,6 +2139,7 @@ body {
     .how-content {
         &__tabs {
             padding: 250px 0 0 300px;
+
             &-nav::before {
                 left: 75px;
             }
