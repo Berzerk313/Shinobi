@@ -2001,7 +2001,7 @@ body {
         }
 
         &-outer {
-            bottom: 430px;
+            bottom: 500px;
             transform: rotate(-4.00deg);
         }
 
@@ -2016,7 +2016,7 @@ body {
     .how-content {
         &-outer {
             width: 99%;
-            bottom: 420px;
+            bottom: 480px;
             transform: rotate(-5.0deg);
         }
 
@@ -2069,7 +2069,7 @@ body {
 @media (max-width: 690px) {
     .how-content {
         &-outer {
-            bottom: 420px;
+            bottom: 460px;
             transform: rotate(-6.0deg);
         }
     }
@@ -2183,7 +2183,7 @@ body {
         }
 
         &-outer {
-            bottom: 520px;
+            bottom: 570px;
             transform: rotate(-4.5deg);
         }
 
@@ -2244,7 +2244,17 @@ body {
     .how-content {
         &-outer {
             width: 97.5%;
-            bottom: 540px;
+            bottom: 560px;
+            transform: rotate(-6.0deg);
+        }
+    }
+}
+
+@media (max-width: 325px) {
+    .how-content {
+        &-outer {
+            width: 97.5%;
+            bottom: 590px;
             transform: rotate(-6.0deg);
         }
     }

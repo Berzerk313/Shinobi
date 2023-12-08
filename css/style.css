@@ -1547,7 +1547,7 @@ body {
     font-size: 15px;
   }
   .how-content-outer {
-    bottom: 430px;
+    bottom: 500px;
     transform: rotate(-4deg);
   }
   .how-content-text {
@@ -1557,7 +1557,7 @@ body {
 @media (max-width: 790px) {
   .how-content-outer {
     width: 99%;
-    bottom: 420px;
+    bottom: 480px;
     transform: rotate(-5deg);
   }
   .how-content-text {
@@ -1598,7 +1598,7 @@ body {
 }
 @media (max-width: 690px) {
   .how-content-outer {
-    bottom: 420px;
+    bottom: 460px;
     transform: rotate(-6deg);
   }
 }
@@ -1682,7 +1682,7 @@ body {
     transition: all 0.5s ease;
   }
   .how-content-outer {
-    bottom: 520px;
+    bottom: 570px;
     transform: rotate(-4.5deg);
   }
   .how-content-text {
@@ -1725,7 +1725,14 @@ body {
 @media (max-width: 335px) {
   .how-content-outer {
     width: 97.5%;
-    bottom: 540px;
+    bottom: 560px;
+    transform: rotate(-6deg);
+  }
+}
+@media (max-width: 325px) {
+  .how-content-outer {
+    width: 97.5%;
+    bottom: 590px;
     transform: rotate(-6deg);
   }
 }
